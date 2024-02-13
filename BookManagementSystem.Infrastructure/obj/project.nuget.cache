@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Oj8aSG9fDo0kPPOtQ8byM+3SYKamNb9NWQwfuWlYXEVU8l30hQnKvjoWiWkaMKQUR+Jnx1It7U5u70kUdrXPfQ==",
+  "dgSpecHash": "TtNe91zQS2hYtjJ5vCc1QOu1wk5uYDiyrfpbrKxpMNCStnREFMa0pfZZu9OIZZe31Q4aGVnJuh9YfME7v06g6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lukak\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",

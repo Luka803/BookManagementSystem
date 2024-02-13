@@ -9,7 +9,7 @@ namespace BookManagementSystem.Persistence.Repositories;
 
 public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 {
-    private readonly BookManagementSystemDbContext _dbContext;
+    protected readonly BookManagementSystemDbContext _dbContext;
 
     public GenericRepository(BookManagementSystemDbContext dbContext)
     {
@@ -21,9 +21,10 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
         await _dbContext.SaveChangesAsync();
     }
 
-    public Task DeleteAsync(T entity)
+    public async Task DeleteAsync(T entity)
     {
-        throw new NotImplementedException();
+        _dbContext.Remove(entity);
+        await _dbContext.SaveChangesAsync();
     }
 
     public async Task<IReadOnlyList<T>> GetAllAsync()
@@ -36,8 +37,9 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
         return await _dbContext.Set<T>().FindAsync(id);
     }
 
-    public Task UpdateAsync(T entity)
+    public async Task UpdateAsync(T entity)
     {
-        throw new NotImplementedException();
+        _dbContext.Entry(entity).State = EntityState.Modified;
+        await _dbContext.SaveChangesAsync();
     }
 }

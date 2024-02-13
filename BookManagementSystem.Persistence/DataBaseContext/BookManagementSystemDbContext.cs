@@ -23,11 +23,11 @@ public class BookManagementSystemDbContext : DbContext
         foreach (var entry in base.ChangeTracker.Entries<BaseEntity>()
             .Where(q => q.State == EntityState.Added || q.State == EntityState.Modified))
         {
-            entry.Entity.CreatedDate = DateTime.Now;
+            entry.Entity.ModifiedDate = DateTime.Now;
 
             if (entry.State == EntityState.Added)
             {
-                entry.Entity.ModifiedDate = DateTime.Now;
+                entry.Entity.CreatedDate = DateTime.Now;
             }
         }
 

@@ -295,3 +295,5 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.genruntimeconfig.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\ref\BookManagementSystem.API.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

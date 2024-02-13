@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9mBhy8bvaqxF2XhbGJUDMhBA3v3RiwNa2J0Pzagwu8XHp7oTmhFToAnhr4kZQlvAoDcbToCoBxF7pbYWu8DanQ==",
+  "dgSpecHash": "cdSvLjaWxfszxnV4s3GG6A5ptHoE1/iF3eB/3Ap1Bb/BI+MFQNPJsmhoC+DaXXvNuTXSA2BMmSon2kO5vV8xHg==",
   "success": true,
   "projectFilePath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "C:\\Users\\lukak\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation\\11.9.0\\fluentvalidation.11.9.0.nupkg.sha512",
+    "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\lukak\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",

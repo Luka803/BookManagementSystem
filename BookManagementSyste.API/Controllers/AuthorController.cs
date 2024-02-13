@@ -1,5 +1,7 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
 using BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
+using BookManagementSystem.Application.Features.Author.Commands.DeleteAuthor;
+using BookManagementSystem.Application.Features.Author.Commands.UpdateAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
@@ -9,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BookManagementSyste.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/author")]
 [ApiController]
 public class AuthorController : BaseController
 {
@@ -17,28 +19,42 @@ public class AuthorController : BaseController
     {
     }
 
-    [HttpGet("GetAuthorsDropdown")]
+    [HttpGet("getAuthorsDropdown")]
     public async Task<List<AuthorDropdownDTO>> GetAuthorsDropdown()
     {
         return await _mediator.Send(new GetAuthorsDropdownQuery());
     }
 
-    [HttpGet("GetAuthorsPagedList{page}")]
+    [HttpGet("getAuthorsPagedList{page}")]
     public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page)
     {
         return await _mediator.Send(new GetAuthorsPagedListQuery(page));
     }
 
-    [HttpGet("{id}")]
+    [HttpGet("getSingleAuthor{id}")]
     public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid id)
     {
         return await _mediator.Send(new GetAuthorQuery(id));
     }
 
-    [HttpPost("AddAuthor")]
+    [HttpPost("addAuthor")]
     public async Task<Guid> AddAuthor(AddAuthorCommand addAuthorCommand)
     {
         return await _mediator.Send(addAuthorCommand);
+    }
+
+    [HttpDelete("deleteAuthor{id}")]
+    public async Task<IActionResult> DeleteAuthor(Guid id)
+    {
+        var command = new DeleteAuthorCommand(id);
+        await _mediator.Send(command);
+        return Ok();
+    }
+
+    [HttpPut("updateAuthor")]
+    public async Task<Guid> UpdateAuthor(UpdateAuthorCommand updateAuthorCommand)
+    {
+        return await _mediator.Send(updateAuthorCommand);
     }
 
 }

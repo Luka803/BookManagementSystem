@@ -6,7 +6,7 @@ namespace BookManagementSystem.Application.Contracts.Persistence;
 
 public interface IAuthorRepository : IGenericRepository<Author>
 {
-
+    public Task<bool> AuthorExist(string name);
 }
 
 
