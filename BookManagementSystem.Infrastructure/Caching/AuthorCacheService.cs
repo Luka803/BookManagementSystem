@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Caching;
+using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Domain;
 using Microsoft.Extensions.Caching.Memory;
 

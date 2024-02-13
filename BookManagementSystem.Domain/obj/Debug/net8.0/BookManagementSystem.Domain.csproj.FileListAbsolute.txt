@@ -31,3 +31,4 @@ C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Domain\obj\Debug
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Domain\obj\Debug\net8.0\refint\BookManagementSystem.Domain.dll
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Domain\obj\Debug\net8.0\BookManagementSystem.Domain.pdb
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Domain\obj\Debug\net8.0\ref\BookManagementSystem.Domain.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Domain\obj\Debug\net8.0\BookManagementSystem.Domain.sourcelink.json

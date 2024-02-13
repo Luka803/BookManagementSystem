@@ -8,13 +8,13 @@ using MyDomain = BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 
-public class GetAuthorsPagedListQueryHandler : BaseQueryHandler<GetAuthorsPagedListQuery, List<AuthorPagedListDTO>>
+public class GetAuthorsPagedListQueryHandler : BaseQueryHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>
 {
-    public GetAuthorsPagedListQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseQueryHandler<GetAuthorsPagedListQuery, List<AuthorPagedListDTO>>> logger) : base(mapper, cache, repository, logger)
+    public GetAuthorsPagedListQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseQueryHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>> logger) : base(mapper, cache, repository, logger)
     {
     }
 
-    protected async override Task<List<AuthorPagedListDTO>> HandleCore(GetAuthorsPagedListQuery request, CancellationToken cancellationToken)
+    protected async override Task<PagedListDTO<AuthorPagedListDTO>> HandleCore(GetAuthorsPagedListQuery request, CancellationToken cancellationToken)
     {
         var pagedList = new PagedList<AuthorPagedListDTO>(new MyDomain.Author());
 
@@ -26,8 +26,14 @@ public class GetAuthorsPagedListQueryHandler : BaseQueryHandler<GetAuthorsPagedL
             TimeSpan.FromMinutes(1)
             );
 
+
         pagedList.Items = _mapper.Map<IReadOnlyList<AuthorPagedListDTO>>(pagedList.DbItemsFiltered);
 
-        return (List<AuthorPagedListDTO>)pagedList.Items;
+        return new PagedListDTO<AuthorPagedListDTO>
+        {
+            Items = pagedList.Items,
+            TotalItems = pagedList.TotalItems,
+            PageNumber = pagedList.PageNumber,
+        };
     }
 }

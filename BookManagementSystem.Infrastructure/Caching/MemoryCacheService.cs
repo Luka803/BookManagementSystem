@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Caching.Base;
+using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Domain.Base;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -30,6 +31,7 @@ public class MemoryCacheService<T> : IGenericMemoryCacheService<T> where T : Bas
                 _cache.Set(cacheKey, cachedData, cacheEntryOptions);
             }
         }
+
         await Task.CompletedTask;
         return cachedData;
     }

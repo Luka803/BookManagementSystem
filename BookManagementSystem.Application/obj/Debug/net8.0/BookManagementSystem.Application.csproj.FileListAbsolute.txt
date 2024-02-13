@@ -43,3 +43,4 @@ C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Application\obj\
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Application\obj\Debug\net8.0\refint\BookManagementSystem.Application.dll
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Application\obj\Debug\net8.0\BookManagementSystem.Application.pdb
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Application\obj\Debug\net8.0\ref\BookManagementSystem.Application.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Application\obj\Debug\net8.0\BookManagementSystem.Application.sourcelink.json

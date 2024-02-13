@@ -23,11 +23,10 @@ public class AuthorController : BaseController
     }
 
     [HttpGet("GetAuthorsPagedList{page}")]
-    public async Task<List<AuthorPagedListDTO>> GetAuthorsPagedList(int page)
+    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page)
     {
         return await _mediator.Send(new GetAuthorsPagedListQuery(page));
     }
-
 
     [HttpGet("{id}")]
     public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid id)
