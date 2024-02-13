@@ -1,12 +1,12 @@
 ﻿using BookManagementSystem.Application.Contracts.UnitOfWork;
 using FluentValidation;
 
-namespace BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
+namespace BookManagementSystem.Application.Features.Author.Commands.UpdateAuthor;
 
-public class AddAuthorCommandValidator : AbstractValidator<AddAuthorCommand>
+public class UpdateAuthorCommandValidator : AbstractValidator<UpdateAuthorCommand>
 {
     private readonly IApplicationUnitOfWorkRepository _applicationUnitOfWorkRepository;
-    public AddAuthorCommandValidator(IApplicationUnitOfWorkRepository applicationUnitOfWorkRepository)
+    public UpdateAuthorCommandValidator(IApplicationUnitOfWorkRepository applicationUnitOfWorkRepository)
     {
         this._applicationUnitOfWorkRepository = applicationUnitOfWorkRepository;
 
@@ -31,9 +31,8 @@ public class AddAuthorCommandValidator : AbstractValidator<AddAuthorCommand>
             .WithMessage("Author with this name already exists");
     }
 
-    private async Task<bool> NameExist(AddAuthorCommand command, CancellationToken token)
+    private async Task<bool> NameExist(UpdateAuthorCommand command, CancellationToken token)
     {
         return await _applicationUnitOfWorkRepository.Author.AuthorExist(command.AuthorName) == false;
     }
-
 }
