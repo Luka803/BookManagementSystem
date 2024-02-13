@@ -2,7 +2,7 @@
 
 namespace BookManagementSystem.Application.Contracts.UnitOfWork;
 
-public interface IApplicationUnitOfWorkRepository
+public interface IApplicationUnitOfWorkRepository : IDisposable
 {
     //Repo
     public IUserRepository User { get; }
@@ -11,4 +11,6 @@ public interface IApplicationUnitOfWorkRepository
     public IOrderItemRepository OrderItem { get; }
     public IAuthorRepository Author { get; }
     public IReviewRepository Review { get; }
+
+    public Task SaveChanges();
 }

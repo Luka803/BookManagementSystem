@@ -15,9 +15,10 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         this._dbContext = dbContext;
     }
-    public Task CreateAsync(T entity)
+    public async Task CreateAsync(T entity)
     {
-        throw new NotImplementedException();
+        await _dbContext.AddAsync(entity);
+        await _dbContext.SaveChangesAsync();
     }
 
     public Task DeleteAsync(T entity)

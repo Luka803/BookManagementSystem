@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Models;
@@ -13,6 +14,7 @@ public class AuthorMappingProfile : Profile
         CreateMap<Author, AuthorDropdownDTO>().ReverseMap();
         CreateMap<Author, AuthorDetailsDTO>().ReverseMap();
         CreateMap<Author, AuthorPagedListDTO>().ReverseMap();
+        CreateMap<Author, AddAuthorCommand>().ReverseMap();
 
     }
 }

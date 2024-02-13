@@ -5,9 +5,9 @@ using BookManagementSystem.Application.Features.Base;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 
-public class GetAuthorsDropdownHandler : BaseQueryHandler<GetAuthorsDropdownQuery, List<AuthorDropdownDTO>>
+public class GetAuthorsDropdownHandler : BaseRequestHandler<GetAuthorsDropdownQuery, List<AuthorDropdownDTO>>
 {
-    public GetAuthorsDropdownHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseQueryHandler<GetAuthorsDropdownQuery, List<AuthorDropdownDTO>>> logger) : base(mapper, cache, repository, logger)
+    public GetAuthorsDropdownHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseRequestHandler<GetAuthorsDropdownQuery, List<AuthorDropdownDTO>>> logger) : base(mapper, cache, repository, logger)
     {
     }
 

@@ -6,9 +6,9 @@ using BookManagementSystem.Application.Features.Base;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
 
-public class GetAuthorQueryHandler : BaseQueryHandler<GetAuthorQuery, AuthorDetailsDTO>
+public class GetAuthorQueryHandler : BaseRequestHandler<GetAuthorQuery, AuthorDetailsDTO>
 {
-    public GetAuthorQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseQueryHandler<GetAuthorQuery, AuthorDetailsDTO>> logger) : base(mapper, cache, repository, logger)
+    public GetAuthorQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseRequestHandler<GetAuthorQuery, AuthorDetailsDTO>> logger) : base(mapper, cache, repository, logger)
     {
     }
 

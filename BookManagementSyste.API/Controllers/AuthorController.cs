@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
+using BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
@@ -32,6 +33,12 @@ public class AuthorController : BaseController
     public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid id)
     {
         return await _mediator.Send(new GetAuthorQuery(id));
+    }
+
+    [HttpPost("AddAuthor")]
+    public async Task<Guid> AddAuthor(AddAuthorCommand addAuthorCommand)
+    {
+        return await _mediator.Send(addAuthorCommand);
     }
 
 }

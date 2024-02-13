@@ -8,9 +8,9 @@ using MyDomain = BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 
-public class GetAuthorsPagedListQueryHandler : BaseQueryHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>
+public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>
 {
-    public GetAuthorsPagedListQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseQueryHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>> logger) : base(mapper, cache, repository, logger)
+    public GetAuthorsPagedListQueryHandler(IMapper mapper, IApplicationUnitOfWorkCache cache, IApplicationUnitOfWorkRepository repository, IAppLogger<BaseRequestHandler<GetAuthorsPagedListQuery, PagedListDTO<AuthorPagedListDTO>>> logger) : base(mapper, cache, repository, logger)
     {
     }
 
