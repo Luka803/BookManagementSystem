@@ -18,12 +18,14 @@ public class UpdateAuthorCommandHandler : BaseRequestHandler<UpdateAuthorCommand
         var validator = new UpdateAuthorCommandValidator(_repository);
         var validatonResult = await validator.ValidateAsync(request, cancellationToken);
 
+
         if (validatonResult.Errors.Any())
         {
             throw new FluentValidationException("Validation errors", validatonResult);
         }
 
         var entity = _mapper.Map<MyDomain.Author>(request);
+
 
         await _repository.Author.UpdateAsync(entity);
 
