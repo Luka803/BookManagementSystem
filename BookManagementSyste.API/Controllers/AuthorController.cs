@@ -38,7 +38,6 @@ public class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorQuery(id));
     }
 
-
     [HttpGet("getAuthorBooksPagedList{id}/{page}")]
     public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(Guid id, int page = 1)
     {
@@ -52,6 +51,12 @@ public class AuthorController : BaseController
         return Ok(response);
     }
 
+    [HttpPut("updateAuthor")]
+    public async Task<Guid> UpdateAuthor(UpdateAuthorCommand updateAuthorCommand)
+    {
+        return await _mediator.Send(updateAuthorCommand);
+    }
+
     [HttpDelete("deleteAuthor{id}")]
     public async Task<IActionResult> DeleteAuthor(Guid id)
     {
@@ -60,10 +65,6 @@ public class AuthorController : BaseController
         return Ok();
     }
 
-    [HttpPut("updateAuthor")]
-    public async Task<Guid> UpdateAuthor(UpdateAuthorCommand updateAuthorCommand)
-    {
-        return await _mediator.Send(updateAuthorCommand);
-    }
+
 
 }

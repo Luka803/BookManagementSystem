@@ -22,10 +22,17 @@ public abstract class BaseRequestHandler<TRequest, TResult> : IRequestHandler<TR
         _logger = logger;
 
     }
+
+    public void HandleRequest()
+    {
+
+    }
     public async Task<TResult> Handle(TRequest request, CancellationToken cancellationToken)
     {
         return await HandleCore(request, cancellationToken);
     }
     protected abstract Task<TResult> HandleCore(TRequest request, CancellationToken cancellationToken);
+
+
 
 }
