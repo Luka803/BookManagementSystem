@@ -3,6 +3,7 @@ using BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
 using BookManagementSystem.Application.Features.Author.Commands.DeleteAuthor;
 using BookManagementSystem.Application.Features.Author.Commands.UpdateAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
+using BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooks;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 using BookManagementSystem.Application.Models;
@@ -26,7 +27,7 @@ public class AuthorController : BaseController
     }
 
     [HttpGet("getAuthorsPagedList{page}")]
-    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page)
+    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
     {
         return await _mediator.Send(new GetAuthorsPagedListQuery(page));
     }
@@ -37,10 +38,18 @@ public class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorQuery(id));
     }
 
-    [HttpPost("addAuthor")]
-    public async Task<Guid> AddAuthor(AddAuthorCommand addAuthorCommand)
+
+    [HttpGet("getAuthorBooksPagedList{id}/{page}")]
+    public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(Guid id, int page = 1)
     {
-        return await _mediator.Send(addAuthorCommand);
+        return await _mediator.Send(new GetAuthorBooksQuery(id, page));
+    }
+
+    [HttpPost("addAuthor")]
+    public async Task<ActionResult<Guid>> AddAuthor(AddAuthorCommand addAuthorCommand)
+    {
+        var response = await _mediator.Send(addAuthorCommand);
+        return Ok(response);
     }
 
     [HttpDelete("deleteAuthor{id}")]

@@ -26,7 +26,6 @@ public class UpdateAuthorCommandHandler : BaseRequestHandler<UpdateAuthorCommand
 
         var entity = _mapper.Map<MyDomain.Author>(request);
 
-
         await _repository.Author.UpdateAsync(entity);
 
         return entity.ID;

@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence;
+using BookManagementSystem.Application.Exceptions;
 using BookManagementSystem.Domain;
 using BookManagementSystem.Persistence.DataBaseContext;
 using Microsoft.EntityFrameworkCore;
@@ -17,5 +18,18 @@ public class AuthorRepository : GenericRepository<Author>, IAuthorRepository
             .Set<Author>()
             .SingleOrDefaultAsync(x => x.AuthorName.ToLower() == name.ToLower());
         return author != null;
+    }
+
+    public async Task<List<Book>> GetAuthorBooks(Guid id)
+    {
+        var authorBooks = await _dbContext.Set<Author>()
+            .Include(x => x.Books)
+            .FirstOrDefaultAsync(x => x.ID == id);
+
+        if (authorBooks.Books.Any())
+        {
+            return authorBooks.Books.ToList();
+        }
+        throw new NotFoundException("There is no books for author with ID({0}}", id);
     }
 }

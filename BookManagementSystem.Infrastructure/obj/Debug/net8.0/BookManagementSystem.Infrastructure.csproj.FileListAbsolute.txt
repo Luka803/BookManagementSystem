@@ -33,3 +33,4 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infras
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\refint\BookManagementSystem.Infrastructure.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\ref\BookManagementSystem.Infrastructure.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.sourcelink.json

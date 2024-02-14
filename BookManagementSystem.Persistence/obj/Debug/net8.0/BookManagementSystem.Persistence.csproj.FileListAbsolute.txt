@@ -37,3 +37,4 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persis
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.genruntimeconfig.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\ref\BookManagementSystem.Persistence.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.sourcelink.json
