@@ -1,6 +1,6 @@
 ﻿using BookManagementSystem.Application.Contracts.Caching.Base;
 using BookManagementSystem.Application.Contracts.Logging;
-using BookManagementSystem.Application.Contracts.UnitOfWork;
+using BookManagementSystem.Application.UnitOfWork;
 using BookManagementSystem.Infrastructure.Caching;
 using BookManagementSystem.Infrastructure.Logging;
 using BookManagementSystem.Infrastructure.UnitOfWork;

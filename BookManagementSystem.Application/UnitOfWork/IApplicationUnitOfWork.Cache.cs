@@ -1,6 +1,6 @@
 ﻿using BookManagementSystem.Application.Contracts.Caching;
 
-namespace BookManagementSystem.Application.Contracts.UnitOfWork;
+namespace BookManagementSystem.Application.UnitOfWork;
 
 public interface IApplicationUnitOfWorkCache
 {

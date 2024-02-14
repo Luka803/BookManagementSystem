@@ -1,4 +1,4 @@
-﻿using BookManagementSystem.Application.Contracts.UnitOfWork;
+﻿using BookManagementSystem.Application.UnitOfWork;
 using FluentValidation;
 
 namespace BookManagementSystem.Application.Features.Base;

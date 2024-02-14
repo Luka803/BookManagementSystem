@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Contracts.Logging;
-using BookManagementSystem.Application.Contracts.UnitOfWork;
+using BookManagementSystem.Application.UnitOfWork;
 using MediatR;
 
 namespace BookManagementSystem.Application.Features.Base;
@@ -23,10 +23,6 @@ public abstract class BaseRequestHandler<TRequest, TResult> : IRequestHandler<TR
 
     }
 
-    public void HandleRequest()
-    {
-
-    }
     public async Task<TResult> Handle(TRequest request, CancellationToken cancellationToken)
     {
         return await HandleCore(request, cancellationToken);

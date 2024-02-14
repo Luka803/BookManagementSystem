@@ -1,5 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence.Base;
-using BookManagementSystem.Application.Contracts.UnitOfWork;
+using BookManagementSystem.Application.UnitOfWork;
 using BookManagementSystem.Persistence.DataBaseContext;
 using BookManagementSystem.Persistence.Repositories;
 using BookManagementSystem.Persistence.UnitOfWork;

@@ -1,5 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Logging;
-using BookManagementSystem.Application.Contracts.UnitOfWork;
+using BookManagementSystem.Application.UnitOfWork;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace BookManagementSystem.Infrastructure.UnitOfWork;

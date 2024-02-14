@@ -1,4 +1,4 @@
-﻿using BookManagementSystem.Application.Features.Base;
+﻿using BookManagementSystem.Application.Models;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 

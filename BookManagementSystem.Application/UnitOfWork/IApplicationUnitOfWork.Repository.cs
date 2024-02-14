@@ -1,6 +1,6 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence;
 
-namespace BookManagementSystem.Application.Contracts.UnitOfWork;
+namespace BookManagementSystem.Application.UnitOfWork;
 
 public interface IApplicationUnitOfWorkRepository : IDisposable
 {
@@ -11,6 +11,5 @@ public interface IApplicationUnitOfWorkRepository : IDisposable
     public IOrderItemRepository OrderItem { get; }
     public IAuthorRepository Author { get; }
     public IReviewRepository Review { get; }
-
     public Task SaveChanges();
 }

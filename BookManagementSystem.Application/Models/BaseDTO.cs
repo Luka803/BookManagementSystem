@@ -1,4 +1,4 @@
-﻿namespace BookManagementSystem.Application.Features.Base;
+﻿namespace BookManagementSystem.Application.Models;
 
 public abstract class BaseDTO
 {

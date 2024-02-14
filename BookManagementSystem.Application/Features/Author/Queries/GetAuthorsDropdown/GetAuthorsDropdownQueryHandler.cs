@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Contracts.Logging;
-using BookManagementSystem.Application.Contracts.UnitOfWork;
 using BookManagementSystem.Application.Features.Base;
+using BookManagementSystem.Application.UnitOfWork;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 

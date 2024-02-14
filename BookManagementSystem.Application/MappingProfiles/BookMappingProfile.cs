@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooks;
+using BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList;
 using BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.MappingProfiles;
