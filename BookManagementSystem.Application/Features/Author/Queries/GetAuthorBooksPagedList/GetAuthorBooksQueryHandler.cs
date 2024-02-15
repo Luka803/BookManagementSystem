@@ -4,7 +4,7 @@ using BookManagementSystem.Application.Exceptions;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
-using BookManagementSystem.Domain;
+using MyDomain = BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList;
 
@@ -16,7 +16,7 @@ public class GetAuthorBooksPagedListQueryHandler : BaseRequestHandler<GetAuthorB
 
     protected async override Task<PagedListDTO<AuthorBooksDTO>> HandleCore(GetAuthorBooksPagedListQuery request, CancellationToken cancellationToken)
     {
-        var pagedList = new PagedList<AuthorBooksDTO>(new Book());
+        var pagedList = new PagedList<AuthorBooksDTO>(new MyDomain.Book());
 
         var validator = new GetAuthorBooksPagedListQueryValidator(_repository);
         var validationResult = await validator.ValidateAsync(request, cancellationToken);

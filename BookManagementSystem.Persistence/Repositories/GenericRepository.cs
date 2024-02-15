@@ -1,6 +1,4 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence.Base;
-using BookManagementSystem.Application.Features.Base;
-using BookManagementSystem.Application.Models;
 using BookManagementSystem.Domain.Base;
 using BookManagementSystem.Persistence.DataBaseContext;
 using Microsoft.EntityFrameworkCore;

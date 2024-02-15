@@ -31,10 +31,10 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persis
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.AssemblyInfo.cs
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.csproj.CoreCompileInputs.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.sourcelink.json
-C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.csproj.CopyComplete
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\refint\BookManagementSystem.Persistence.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.genruntimeconfig.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\ref\BookManagementSystem.Persistence.dll
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookManagementSystem.Persistence.sourcelink.json
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Persistence\obj\Debug\net8.0\BookMana.F3810996.Up2Date

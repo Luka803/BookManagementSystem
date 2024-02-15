@@ -4,7 +4,6 @@ namespace BookManagementSystem.Application.UnitOfWork;
 
 public interface IApplicationUnitOfWorkRepository : IDisposable
 {
-    //Repo
     public IUserRepository User { get; }
     public IBookRepository Books { get; }
     public IOrderRepository Order { get; }

@@ -5,7 +5,14 @@ namespace BookManagementSystem.Persistence.UnitOfWork;
 
 public partial class ApplicationUnitOfWork
 {
-    public IBookRepository Books => throw new NotImplementedException();
+    protected IBookRepository? _Books;
+    public IBookRepository Books
+    {
+        get
+        {
+            return _Books ?? (_Books = new BookRepository(dbContext));
+        }
+    }
 
     public IOrderRepository Order => throw new NotImplementedException();
 

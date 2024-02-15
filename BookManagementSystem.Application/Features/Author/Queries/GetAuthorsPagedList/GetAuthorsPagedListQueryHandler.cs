@@ -26,7 +26,6 @@ public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPage
             TimeSpan.FromMinutes(1)
             );
 
-
         pagedList.Items = _mapper.Map<IReadOnlyList<AuthorPagedListDTO>>(pagedList.DbItemsFiltered);
 
         return new PagedListDTO<AuthorPagedListDTO>
