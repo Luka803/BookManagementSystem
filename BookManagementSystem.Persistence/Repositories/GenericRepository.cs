@@ -29,12 +29,12 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 
     public async Task<IReadOnlyList<T>> GetAllAsync()
     {
-        return await _dbContext.Set<T>().ToListAsync();
+        return await _dbContext.Set<T>().AsNoTracking().ToListAsync();
     }
 
     public async Task<T> GetAsync(Guid id)
     {
-        return await _dbContext.Set<T>().FindAsync(id);
+        return await _dbContext.Set<T>().AsNoTracking().SingleOrDefaultAsync(x => x.ID == id);
     }
 
     public async Task UpdateAsync(T entity)

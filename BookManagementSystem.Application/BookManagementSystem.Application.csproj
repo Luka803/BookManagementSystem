@@ -19,4 +19,15 @@
     <ProjectReference Include="..\BookManagementSystem.Domain\BookManagementSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\Book\Commands\AddBook\" />
+    <Folder Include="Features\Book\Commands\DeleteBook\" />
+    <Folder Include="Features\Book\Commands\UpdateBook\" />
+    <Folder Include="Features\Book\Queries\GetBooksPagedList\" />
+    <Folder Include="Features\Book\Queries\GetBooksDropDown\" />
+    <Folder Include="Features\Book\Queries\GetBook\" />
+    <Folder Include="Features\Book\Queries\GetBookReviewsPagedList\" />
+    <Folder Include="Features\Book\Queries\GetBookOrderPagedList\" />
+  </ItemGroup>
+
 </Project>

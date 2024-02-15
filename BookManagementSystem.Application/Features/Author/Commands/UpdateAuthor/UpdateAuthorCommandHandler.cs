@@ -24,11 +24,11 @@ public class UpdateAuthorCommandHandler : BaseRequestHandler<UpdateAuthorCommand
             throw new FluentValidationException("Validation errors", validatonResult);
         }
 
-        var entity = _mapper.Map<MyDomain.Author>(request);
+        var entityToUpdate = _mapper.Map<MyDomain.Author>(request);
 
-        await _repository.Author.UpdateAsync(entity);
+        await _repository.Author.UpdateAsync(entityToUpdate);
 
-        return entity.ID;
+        return entityToUpdate.ID;
 
     }
 }

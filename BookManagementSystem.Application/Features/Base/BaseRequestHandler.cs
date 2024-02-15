@@ -1,14 +1,17 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Contracts.Logging;
+using BookManagementSystem.Application.Exceptions;
 using BookManagementSystem.Application.UnitOfWork;
+using BookManagementSystem.Domain.Base;
+using FluentValidation.Results;
 using MediatR;
 
 namespace BookManagementSystem.Application.Features.Base;
 
 public abstract class BaseRequestHandler<TRequest, TResult> : IRequestHandler<TRequest, TResult>
     where TRequest : IRequest<TResult>
-{
 
+{
     protected readonly IMapper _mapper;
     protected readonly IApplicationUnitOfWorkCache _cache;
     protected readonly IApplicationUnitOfWorkRepository _repository;
@@ -25,10 +28,9 @@ public abstract class BaseRequestHandler<TRequest, TResult> : IRequestHandler<TR
 
     public async Task<TResult> Handle(TRequest request, CancellationToken cancellationToken)
     {
+
         return await HandleCore(request, cancellationToken);
+
     }
     protected abstract Task<TResult> HandleCore(TRequest request, CancellationToken cancellationToken);
-
-
-
 }

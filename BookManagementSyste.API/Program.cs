@@ -2,12 +2,7 @@ using BookManagementSystem.Persistence;
 using BookManagementSystem.Application;
 using BookManagementSystem.Infrastructure;
 
-
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-
 
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddPersistenceServices(builder.Configuration);
@@ -15,10 +10,8 @@ builder.Services.AddInfrastructureServices();
 
 builder.Services.AddControllers();
 
-
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 
 var app = builder.Build();
 
