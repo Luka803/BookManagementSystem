@@ -1,6 +1,5 @@
 ﻿using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Models;
-using MyDomain = BookManagementSystem.Domain;
 using MediatR;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;

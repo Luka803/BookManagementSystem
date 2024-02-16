@@ -1,6 +1,6 @@
 [
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "AddAuthor",
     "RelativePath": "api/author/addAuthor",
     "HttpMethod": "POST",
@@ -26,7 +26,7 @@
     ]
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "DeleteAuthor",
     "RelativePath": "api/author/deleteAuthor{id}",
     "HttpMethod": "DELETE",
@@ -42,38 +42,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
-    "Method": "GetAuthorBooks",
-    "RelativePath": "api/author/getAuthorBooksPagedList{id}/{page}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Guid",
-        "IsRequired": true
-      },
-      {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList.AuthorBooksDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsDropdown",
     "RelativePath": "api/author/getAuthorsDropdown",
     "HttpMethod": "GET",
@@ -93,7 +62,7 @@
     ]
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsPagedList",
     "RelativePath": "api/author/getAuthorsPagedList{page}",
     "HttpMethod": "GET",
@@ -119,7 +88,7 @@
     ]
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetSingleAuthor",
     "RelativePath": "api/author/getSingleAuthor{id}",
     "HttpMethod": "GET",
@@ -145,7 +114,7 @@
     ]
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Author.AuthorController",
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "UpdateAuthor",
     "RelativePath": "api/author/updateAuthor",
     "HttpMethod": "PUT",
@@ -171,7 +140,136 @@
     ]
   },
   {
-    "ContainingType": "BookManagementSystem.API.Controllers.Book.BookController",
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "AddBook",
+    "RelativePath": "api/book/addBook",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookManagementSystem.Application.Features.Book.Commands.AddBook.AddBookCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "DeleteBook",
+    "RelativePath": "api/book/deleteBook{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MediatR.Unit",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetAuthorBooks",
+    "RelativePath": "api/book/getAuthorBooksPagedList{authorId}/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authorId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList.AuthorBooksDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetBooksDropDown",
+    "RelativePath": "api/book/getBooksDropDown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookManagementSystem.Application.Features.Book.Queries.GetBooksDropDown.BookDropDownDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetBooksWithDetailsPagedList",
+    "RelativePath": "api/book/getBooksWithDetilsPagedList{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList.BookPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "GetBookWithDetails",
     "RelativePath": "api/book/getSingleBookWithDetails{id}",
     "HttpMethod": "GET",
@@ -187,6 +285,89 @@
     "ReturnTypes": [
       {
         "Type": "BookManagementSystem.Application.Features.Book.Queries.GetBook.BookWithDetailsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "UpdateBook",
+    "RelativePath": "api/book/updateBook",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookManagementSystem.Application.Features.Book.Commands.UpdateBook.UpdateBookCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
+    "Method": "AddOrder",
+    "RelativePath": "api/order/addOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookManagementSystem.Application.Features.Order.Commands.AddOrder.AddOrderCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.ReviewController",
+    "Method": "GetBookReviewsPagedList",
+    "RelativePath": "api/review/getBookReviewsPagedList{bookId}/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Review.Queries.GetBookReviewsPagedList.BookReviewsPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

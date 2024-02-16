@@ -3,7 +3,6 @@ using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
-using MyDomain = BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList;
 

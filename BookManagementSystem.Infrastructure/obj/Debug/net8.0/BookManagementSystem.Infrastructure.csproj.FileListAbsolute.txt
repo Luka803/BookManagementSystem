@@ -15,6 +15,7 @@ C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\o
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\refint\BookManagementSystem.Infrastructure.dll
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.pdb
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\ref\BookManagementSystem.Infrastructure.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.sourcelink.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\bin\Debug\net8.0\BookManagementSystem.Infrastructure.deps.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\bin\Debug\net8.0\BookManagementSystem.Infrastructure.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\bin\Debug\net8.0\BookManagementSystem.Infrastructure.pdb
@@ -28,9 +29,8 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infras
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.AssemblyInfo.cs
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.sourcelink.json
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookMana.5D17959B.Up2Date
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\refint\BookManagementSystem.Infrastructure.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\ref\BookManagementSystem.Infrastructure.dll
-C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookManagementSystem.Infrastructure.sourcelink.json
-C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.Infrastructure\obj\Debug\net8.0\BookMana.5D17959B.Up2Date

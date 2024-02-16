@@ -146,6 +146,9 @@ C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.pdb
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.genruntimeconfig.cache
 C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\ref\BookManagementSystem.API.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.sourcelink.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\appsettings.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\BookManagementSystem.API.exe
@@ -157,6 +160,8 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\Humanizer.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\MediatR.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\MediatR.Contracts.dll
@@ -289,14 +294,9 @@ C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BookManagementSystem.API.props
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\staticwebassets.pack.json
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\scopedcss\bundle\BookManagementSystem.API.styles.css
+C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookMana.089AF9BD.Up2Date
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\refint\BookManagementSystem.API.dll
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.pdb
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.genruntimeconfig.cache
 C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\ref\BookManagementSystem.API.dll
-C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
-C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookManagementSystem.API.sourcelink.json
-C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSyste.API\obj\Debug\net8.0\BookMana.089AF9BD.Up2Date

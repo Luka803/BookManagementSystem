@@ -3,9 +3,8 @@ using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
-using MyDomain = BookManagementSystem.Domain;
 
-namespace BookManagementSystem.Application.Features.Book.Queries.GetBookReviewsPagedList;
+namespace BookManagementSystem.Application.Features.Review.Queries.GetBookReviewsPagedList;
 
 public class GetBookReviewsPagedListQueryHandler : BaseRequestHandler<GetBookReviewsPagedListQuery, PagedListDTO<BookReviewsPagedListDTO>>
 {

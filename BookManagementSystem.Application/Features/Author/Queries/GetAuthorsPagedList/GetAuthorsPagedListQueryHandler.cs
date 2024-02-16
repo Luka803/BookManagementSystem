@@ -4,7 +4,6 @@ using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
-using MyDomain = BookManagementSystem.Domain;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 

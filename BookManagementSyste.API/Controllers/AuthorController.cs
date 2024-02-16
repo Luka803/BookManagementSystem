@@ -10,7 +10,7 @@ using BookManagementSystem.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookManagementSystem.API.Controllers.Author;
+namespace BookManagementSystem.API.Controllers;
 
 [Route("api/author")]
 [ApiController]
@@ -37,13 +37,6 @@ public partial class AuthorController : BaseController
     {
         return await _mediator.Send(new GetAuthorQuery(id));
     }
-
-    [HttpGet("getAuthorBooksPagedList{id}/{page}")]
-    public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(Guid id, int page = 1)
-    {
-        return await _mediator.Send(new GetAuthorBooksPagedListQuery(id, page));
-    }
-
     [HttpPost("addAuthor")]
     public async Task<ActionResult<Guid>> AddAuthor(AddAuthorCommand addAuthorCommand)
     {

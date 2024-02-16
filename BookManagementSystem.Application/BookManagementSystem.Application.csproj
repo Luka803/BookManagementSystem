@@ -20,10 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Book\Commands\AddBook\" />
-    <Folder Include="Features\Book\Commands\DeleteBook\" />
-    <Folder Include="Features\Book\Commands\UpdateBook\" />
-    <Folder Include="Features\Book\Queries\GetBookOrderPagedList\" />
+    <Folder Include="Features\Order\Queries\" />
+    <Folder Include="Features\Review\Commands\" />
+    <Folder Include="Features\Review\Queries\GetUserReviews\" />
+    <Folder Include="Features\Review\Queries\GetReviewWithDetails\" />
+    <Folder Include="Features\User\Commands\" />
+    <Folder Include="Features\User\Queries\" />
   </ItemGroup>
 
 </Project>
