@@ -3,24 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsyste.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|solutionrelative:bookmanagementsyste.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsyste.api\\controllers\\book\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|solutionrelative:bookmanagementsyste.api\\controllers\\book\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77F320ED-AD55-46F7-8395-3D336DE524DC}|BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77F320ED-AD55-46F7-8395-3D336DE524DC}|BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj|solutionrelative:bookmanagementsystem.persistence\\persistenceserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbookspagedlist\\getbookspagedlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbookspagedlist\\getbookspagedlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B2926603-5FDC-4E37-B208-A1C878FFF6A5}|BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B2926603-5FDC-4E37-B208-A1C878FFF6A5}|BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj|solutionrelative:bookmanagementsystem.infrastructure\\infrastructureserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbookspagedlist\\getbookspagedlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbookspagedlist\\getbookspagedlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsyste.api\\controllers\\author\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|solutionrelative:bookmanagementsyste.api\\controllers\\author\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbooksdropdown\\getbooksdropdownqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbooksdropdown\\getbooksdropdownqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsyste.api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{49863C8C-E858-4557-86F5-8A50FAFD2384}|BookManagementSyste.API\\BookManagementSystem.API.csproj|solutionrelative:bookmanagementsyste.api\\controllers\\base\\basecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbooksdropdown\\getbooksdropdownquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbooksdropdown\\getbooksdropdownquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\getbookreviewspagedlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\getbookreviewspagedlistqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\getbookreviewspagedlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\getbookreviewspagedlistquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\bookreviewsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\features\\book\\queries\\getbookreviewspagedlist\\bookreviewsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77F320ED-AD55-46F7-8395-3D336DE524DC}|BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.persistence\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77F320ED-AD55-46F7-8395-3D336DE524DC}|BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj|solutionrelative:bookmanagementsystem.persistence\\repositories\\reviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.application\\contracts\\persistence\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DAE02723-958B-43F6-BE27-31C2623A1DD6}|BookManagementSystem.Application\\BookManagementSystem.Application.csproj|solutionrelative:bookmanagementsystem.application\\contracts\\persistence\\ireviewrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +50,125 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetBooksDropDownQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQueryHandler.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQueryHandler.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQueryHandler.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQueryHandler.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:26:44.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetBooksPagedListQuery.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQuery.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQuery.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQuery.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:26:34.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetBooksPagedListQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQueryHandler.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQueryHandler.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQueryHandler.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksPagedList\\GetBooksPagedListQueryHandler.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwCMAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:20:02.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Book\\BookController.cs",
+              "RelativeDocumentMoniker": "BookManagementSyste.API\\Controllers\\Book\\BookController.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Book\\BookController.cs",
+              "RelativeToolTip": "BookManagementSyste.API\\Controllers\\Book\\BookController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwCUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:25:06.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetBooksDropDownQuery.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQuery.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQuery.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQuery.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBooksDropDown\\GetBooksDropDownQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:26:45.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetBookReviewsPagedListQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQueryHandler.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQueryHandler.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQueryHandler.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQueryHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAIA5wBkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:24:16.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetBookReviewsPagedListQuery.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQuery.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQuery.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQuery.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\GetBookReviewsPagedListQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:24:16.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\Repositories\\ReviewRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Persistence\\Repositories\\ReviewRepository.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\Repositories\\ReviewRepository.cs",
+              "RelativeToolTip": "BookManagementSystem.Persistence\\Repositories\\ReviewRepository.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:22:31.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IReviewRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Contracts\\Persistence\\IReviewRepository.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Contracts\\Persistence\\IReviewRepository.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Contracts\\Persistence\\IReviewRepository.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Contracts\\Persistence\\IReviewRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T17:21:44.43Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -42,67 +179,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Program.cs",
-              "RelativeDocumentMoniker": "BookManagementSyste.API\\Program.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Program.cs",
-              "RelativeToolTip": "BookManagementSyste.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAkAAAA",
+              "DocumentIndex": 7,
+              "Title": "BookReviewsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\BookReviewsDTO.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\BookReviewsDTO.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\BookReviewsDTO.cs",
+              "RelativeToolTip": "BookManagementSystem.Application\\Features\\Book\\Queries\\GetBookReviewsPagedList\\BookReviewsDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T16:40:31.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PersistenceServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeDocumentMoniker": "BookManagementSystem.Persistence\\PersistenceServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\PersistenceServiceRegistration.cs",
-              "RelativeToolTip": "BookManagementSystem.Persistence\\PersistenceServiceRegistration.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABcAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T16:40:12.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "InfrastructureServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\InfrastructureServiceRegistration.cs",
-              "RelativeDocumentMoniker": "BookManagementSystem.Infrastructure\\InfrastructureServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\InfrastructureServiceRegistration.cs",
-              "RelativeToolTip": "BookManagementSystem.Infrastructure\\InfrastructureServiceRegistration.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T16:38:22.756Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Author\\AuthorController.cs",
-              "RelativeDocumentMoniker": "BookManagementSyste.API\\Controllers\\Author\\AuthorController.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Author\\AuthorController.cs",
-              "RelativeToolTip": "BookManagementSyste.API\\Controllers\\Author\\AuthorController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAwwDUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T16:34:51.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BaseController.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Base\\BaseController.cs",
-              "RelativeDocumentMoniker": "BookManagementSyste.API\\Controllers\\Base\\BaseController.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\Controllers\\Base\\BaseController.cs",
-              "RelativeToolTip": "BookManagementSyste.API\\Controllers\\Base\\BaseController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T16:34:38.155Z",
+              "WhenOpened": "2024-02-16T17:20:07.696Z",
               "EditorCaption": ""
             }
           ]

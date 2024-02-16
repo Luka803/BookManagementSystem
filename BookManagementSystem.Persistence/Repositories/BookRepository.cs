@@ -11,12 +11,19 @@ public class BookRepository : GenericRepository<Book>, IBookRepository
     {
     }
 
+    public async Task<List<Book>> GetBooksWithDetails()
+    {
+        var books = await _dbContext.Books
+            .Include(x => x.Author)
+            .ToListAsync();
+        return books;
+    }
+
     public async Task<Book> GetBookWithDetails(Guid id)
     {
         var book = await _dbContext.Books
             .Include(x => x.Author)
             .SingleOrDefaultAsync(x => x.ID == id);
-
         return book;
     }
 }

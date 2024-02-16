@@ -33,6 +33,8 @@ public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPage
             Items = pagedList.Items,
             TotalItems = pagedList.TotalItems,
             PageNumber = pagedList.PageNumber,
+            TotalPages = pagedList.TotalPages
+
         };
     }
 }
