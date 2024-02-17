@@ -21,7 +21,7 @@ public class BookController : BaseController
     {
     }
 
-    [HttpGet("getSingleBookWithDetails{id}")]
+    [HttpGet("getSingleBookWithDetails{bookId}")]
     public async Task<BookWithDetailsDTO> GetBookWithDetails(Guid id)
     {
         return await _mediator.Send(new GetBookWithDetailsQuery(id));
@@ -57,7 +57,7 @@ public class BookController : BaseController
         return await _mediator.Send(command);
     }
 
-    [HttpDelete("deleteBook{id}")]
+    [HttpDelete("deleteBook{bookId}")]
 
     public async Task<ActionResult<Unit>> DeleteBook(Guid id)
     {

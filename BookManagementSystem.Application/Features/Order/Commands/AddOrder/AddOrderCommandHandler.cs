@@ -2,6 +2,7 @@
 using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.UnitOfWork;
+using System.Runtime.InteropServices;
 
 namespace BookManagementSystem.Application.Features.Order.Commands.AddOrder;
 
@@ -13,20 +14,32 @@ public class AddOrderCommandHandler : BaseRequestHandler<AddOrderCommand, Guid>
 
     protected override async Task<Guid> HandleCore(AddOrderCommand request, CancellationToken cancellationToken)
     {
-        var orderToAdd = _mapper.Map<MyDomain.Order>(request);
+        int itemNumber = 1;
+        int totalCount = 0;
+        decimal totalPrice = 0;
 
+        var orderToAdd = _mapper.Map<MyDomain.Order>(request);
         await _repository.Order.CreateAsync(orderToAdd);
 
-        var orderItemsToAdd = _mapper.Map<List<MyDomain.OrderItem>>(orderToAdd.OrderItems);
-
-        foreach (var item in orderItemsToAdd)
+        foreach (var item in request.Items)
         {
+            var book = await _repository.Books.GetAsync(item.BookID);
             item.OrderID = orderToAdd.ID;
-            await _repository.OrderItem.CreateAsync(item);
+            item.ItemNumber = itemNumber++;
+            totalCount += item.Count;
+            totalPrice += item.Count * book.Price;
+
+            var orderItemToAdd = _mapper.Map<MyDomain.OrderItem>(item);
+
+            await _repository.OrderItem.CreateAsync(orderItemToAdd);
         }
 
-        return orderToAdd.ID;
+        orderToAdd.TotalPrice = totalPrice;
+        orderToAdd.TotalCount = totalCount;
 
+        await _repository.Order.UpdateAsync(orderToAdd);
+
+        return orderToAdd.ID;
     }
 }
 

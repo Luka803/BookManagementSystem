@@ -14,10 +14,23 @@ public partial class ApplicationUnitOfWork
         }
     }
 
-    public IOrderRepository Order => throw new NotImplementedException();
+    protected IOrderRepository? _Order;
+    public IOrderRepository Order
+    {
+        get
+        {
+            return _Order ?? (_Order = new OrderRepository(dbContext));
+        }
+    }
 
-    public IOrderItemRepository OrderItem => throw new NotImplementedException();
-
+    protected IOrderItemRepository? _OrderItem;
+    public IOrderItemRepository OrderItem
+    {
+        get
+        {
+            return _OrderItem ?? (_OrderItem = new OrderItemRepository(dbContext));
+        }
+    }
 
     protected IAuthorRepository? _Author;
     public IAuthorRepository Author

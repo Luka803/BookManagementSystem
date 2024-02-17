@@ -32,7 +32,7 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorsPagedListQuery(page));
     }
 
-    [HttpGet("getSingleAuthor{id}")]
+    [HttpGet("getSingleAuthor{authorId}")]
     public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid id)
     {
         return await _mediator.Send(new GetAuthorQuery(id));
@@ -50,7 +50,7 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(updateAuthorCommand);
     }
 
-    [HttpDelete("deleteAuthor{id}")]
+    [HttpDelete("deleteAuthor{authorId}")]
     public async Task<IActionResult> DeleteAuthor(Guid id)
     {
         var command = new DeleteAuthorCommand(id);

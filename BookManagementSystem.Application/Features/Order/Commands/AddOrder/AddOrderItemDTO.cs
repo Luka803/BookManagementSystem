@@ -2,5 +2,10 @@
 
 public class AddOrderItemDTO
 {
-    public AddOrderItemBookDTO Book { get; set; } = null!;
+    public Guid OrderID = Guid.Empty;
+    public Guid BookID { get; set; }
+
+    public int ItemNumber = 1;
+    public int Count { get; set; }
+
 }
