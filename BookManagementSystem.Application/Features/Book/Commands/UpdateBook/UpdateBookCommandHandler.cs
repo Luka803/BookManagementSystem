@@ -20,7 +20,9 @@ public class UpdateBookCommandHandler : BaseRequestHandler<UpdateBookCommand, Gu
         if (validationResul.Errors.Any())
             throw new FluentValidationException("Invalid type", validationResul);
 
-        var entityToUpdate = _mapper.Map<MyDomain.Book>(request);
+        var entityToUpdate = await _repository.Books.GetAsync(request.ID);
+
+        _mapper.Map(request, entityToUpdate);
 
         await _repository.Books.UpdateAsync(entityToUpdate);
 
