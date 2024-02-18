@@ -42,5 +42,14 @@ public partial class ApplicationUnitOfWork
     }
 
     public IReviewRepository Review => throw new NotImplementedException();
-    public IUserRepository User => throw new NotImplementedException();
+
+    protected IUserRepository? _User;
+    public IUserRepository User
+    {
+        get
+        {
+            return _User ?? (_User = new UserRepository(dbContext));
+        }
+    }
+
 }

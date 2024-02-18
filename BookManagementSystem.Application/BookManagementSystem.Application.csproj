@@ -25,8 +25,8 @@
     <Folder Include="Features\Review\Commands\" />
     <Folder Include="Features\Review\Queries\GetUserReviews\" />
     <Folder Include="Features\Review\Queries\GetReviewWithDetails\" />
-    <Folder Include="Features\User\Commands\" />
-    <Folder Include="Features\User\Queries\" />
+    <Folder Include="Features\User\Queries\GetUsersPagedList\" />
+    <Folder Include="Features\User\Queries\GetUsersDropDown\" />
   </ItemGroup>
 
 </Project>

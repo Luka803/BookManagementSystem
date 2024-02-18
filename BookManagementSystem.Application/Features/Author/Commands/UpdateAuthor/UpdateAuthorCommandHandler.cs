@@ -23,7 +23,7 @@ public class UpdateAuthorCommandHandler : BaseRequestHandler<UpdateAuthorCommand
             throw new FluentValidationException("Validation errors", validatonResult);
         }
 
-        var entityToUpdate = _mapper.Map<MyDomain.Author>(request);
+        var entityToUpdate = await _repository.Author.GetAsync(request.ID);
 
         await _repository.Author.UpdateAsync(entityToUpdate);
 

@@ -4678,19 +4678,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\lukak\\.nuget\\packages\\": {}
+    "C:\\Users\\Luka\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\BookManagementSystem.API.csproj",
+      "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\BookManagementSystem.API.csproj",
       "projectName": "BookManagementSystem.API",
-      "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\BookManagementSystem.API.csproj",
-      "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\obj\\",
+      "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\BookManagementSystem.API.csproj",
+      "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSyste.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4704,11 +4709,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj"
+            "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj"
             },
-            "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
-              "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj"
+            "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
+              "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj"
             }
           }
         }
@@ -4717,11 +4722,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4758,7 +4758,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
