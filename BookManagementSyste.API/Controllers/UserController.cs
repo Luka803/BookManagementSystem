@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
+using BookManagementSystem.Application.Features.User.Commands.AddUser;
 using BookManagementSystem.Application.Features.User.Queries.GetUserDetails;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -14,6 +15,11 @@ public class UserController : BaseController
     {
     }
 
+    [HttpPost("addUser")]
+    public async Task<Guid> AddUser(AddUserCommand command)
+    {
+        return await _mediator.Send(command);
+    }
     [HttpGet("getSingleUser{id}")]
     public async Task<UserDetailsDTO> GetSingeUser(Guid id)
     {

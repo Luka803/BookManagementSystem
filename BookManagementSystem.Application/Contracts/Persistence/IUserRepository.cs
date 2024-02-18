@@ -5,7 +5,7 @@ namespace BookManagementSystem.Application.Contracts.Persistence;
 
 public interface IUserRepository : IGenericRepository<User>
 {
-    public Task<bool> EmailAlreadyExist(Guid id, string email);
+    public Task<bool> EmailAlreadyExist(string email);
 }
 
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BookManagementSystem.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b87e6432625b0cf5dd33b8571bb1fbeb943b7308")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c5320802c699c89f4518e6a917d5fe338f13ebc9")]
 [assembly: System.Reflection.AssemblyProductAttribute("BookManagementSystem.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BookManagementSystem.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

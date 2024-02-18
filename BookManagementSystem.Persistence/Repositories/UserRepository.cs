@@ -1,6 +1,7 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence;
 using BookManagementSystem.Domain;
 using BookManagementSystem.Persistence.DataBaseContext;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookManagementSystem.Persistence.Repositories;
 
@@ -10,9 +11,11 @@ public class UserRepository : GenericRepository<User>, IUserRepository
     {
     }
 
-    public async Task<bool> EmailAlreadyExist(Guid id, string email)
+    public async Task<bool> EmailAlreadyExist(string email)
     {
-        await Task.CompletedTask;
-        return true;
+        var emailExist = await _dbContext.Users
+            .SingleOrDefaultAsync(x => x.Email == email);
+
+        return emailExist != null;
     }
 }
