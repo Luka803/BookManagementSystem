@@ -14,9 +14,22 @@ public partial class ApplicationUnitOfWorkCache : IApplicationUnitOfWorkCache
             return _authorMemoryCacheService ?? (_authorMemoryCacheService = new AuthorCacheService(_cacheService));
         }
     }
-    public IBookMemoryCacheService BookCacheService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public IOrderMemoryCacheService OrderCacheService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public IOrderItemMemoryCacheService OrderItemCacheService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public IReviewMemoryCacheService ReviewMemoryCacheService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-    public IUserMemoryCacheService UserMemoryCacheService { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+    protected IBookMemoryCacheService? _Book;
+    public IBookMemoryCacheService BookCacheService
+    {
+        get
+        {
+            return _Book ?? (_Book = new BookCacheService(_cacheService));
+        }
+    }
+
+    public IOrderMemoryCacheService OrderCacheService => throw new NotImplementedException();
+
+    public IOrderItemMemoryCacheService OrderItemCacheService => throw new NotImplementedException();
+
+    public IReviewMemoryCacheService ReviewMemoryCacheService => throw new NotImplementedException();
+
+    public IUserMemoryCacheService UserMemoryCacheService => throw new NotImplementedException();
+
 }

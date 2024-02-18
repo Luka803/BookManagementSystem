@@ -15,14 +15,14 @@ public class AddUserCommandHandler : BaseRequestHandler<AddUserCommand, Guid>
     protected override async Task<Guid> HandleCore(AddUserCommand request, CancellationToken cancellationToken)
     {
         var validator = new AddUserCommandValidator(_repository);
-        var validationResult=await validator.ValidateAsync(request, cancellationToken);
+        var validationResult = await validator.ValidateAsync(request, cancellationToken);
 
-        if(validationResult.Errors.Any())
+        if (validationResult.Errors.Any())
         {
             throw new FluentValidationException("Validation errors", validationResult);
         }
 
-        var entityToAdd=_mapper.Map<MyDomain.User>(request);
+        var entityToAdd = _mapper.Map<MyDomain.User>(request);
 
         await _repository.User.CreateAsync(entityToAdd);
 

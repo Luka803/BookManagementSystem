@@ -8,6 +8,7 @@ public interface IAuthorRepository : IGenericRepository<Author>
 {
     public Task<bool> AuthorExist(string name);
     public Task<List<Book>> GetAuthorBooks(Guid id);
+
 }
 
 

@@ -8,6 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Middlewere\**" />
+    <Content Remove="Middlewere\**" />
+    <EmbeddedResource Remove="Middlewere\**" />
+    <None Remove="Middlewere\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -18,10 +25,6 @@
   <ItemGroup>
     <ProjectReference Include="..\BookManagementSystem.Infrastructure\BookManagementSystem.Infrastructure.csproj" />
     <ProjectReference Include="..\BookManagementSystem.Persistence\BookManagementSystem.Persistence.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Middlewere\" />
   </ItemGroup>
 
 </Project>

@@ -1,4 +1,5 @@
-﻿using BookManagementSystem.Application.Contracts.Logging;
+﻿using BookManagementSystem.Application.Contracts.Caching;
+using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Application.UnitOfWork;
 using Microsoft.Extensions.Caching.Memory;
 
@@ -15,4 +16,5 @@ public partial class ApplicationUnitOfWorkCache : IApplicationUnitOfWorkCache
         this._logger = appLogger;
 
     }
+
 }

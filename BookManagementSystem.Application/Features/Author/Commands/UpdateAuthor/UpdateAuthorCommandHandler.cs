@@ -17,17 +17,20 @@ public class UpdateAuthorCommandHandler : BaseRequestHandler<UpdateAuthorCommand
         var validator = new UpdateAuthorCommandValidator(_repository);
         var validatonResult = await validator.ValidateAsync(request, cancellationToken);
 
-
         if (validatonResult.Errors.Any())
-        {
             throw new FluentValidationException("Validation errors", validatonResult);
-        }
 
-        var entityToUpdate = await _repository.Author.GetAsync(request.ID);
+        var author = await _repository.Author.GetAsync(request.ID);
 
-        await _repository.Author.UpdateAsync(entityToUpdate);
+        if (author == null)
+            throw new NotFoundException(nameof(Author), request.ID);
 
-        return entityToUpdate.ID;
+        _mapper.Map(request, author);
+
+        await _repository.Author.UpdateAsync(author);
+        await _cache.AuthorCacheService.RemoveFromCache("GetAuthors");
+
+        return author.ID;
 
     }
 }

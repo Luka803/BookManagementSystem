@@ -27,7 +27,8 @@ public class AddUserCommandValidator : AbstractValidator<AddUserCommand>
 
     private async Task<bool> EmailAlreadyExist(AddUserCommand command, CancellationToken token)
     {
-        return await _repository.User.EmailAlreadyExist(command.Email) == false;
-            .
+        var result = await _repository.User.EmailAlreadyExist(command.Email);
+
+        return result == false;
     }
 }

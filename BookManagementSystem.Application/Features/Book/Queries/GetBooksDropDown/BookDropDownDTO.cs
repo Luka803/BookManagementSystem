@@ -5,4 +5,5 @@ namespace BookManagementSystem.Application.Features.Book.Queries.GetBooksDropDow
 public class BookDropDownDTO : BaseDTO
 {
     public string Title { get; set; } = null!;
+    public decimal Price { get; set; }
 }

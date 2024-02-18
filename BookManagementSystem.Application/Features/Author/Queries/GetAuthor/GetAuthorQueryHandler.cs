@@ -17,7 +17,7 @@ public class GetAuthorQueryHandler : BaseRequestHandler<GetAuthorQuery, AuthorDe
         var author = await _repository.Author.GetAsync(request.ID);
 
         if (author == null)
-            throw new NotFoundException(nameof(author), request.ID);
+            throw new NotFoundException(nameof(Author), request.ID);
 
         _logger.LogInformation("Author with ID ({0}) successfully retrived", request.ID);
         return _mapper.Map<AuthorDetailsDTO>(author);

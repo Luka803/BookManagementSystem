@@ -41,7 +41,14 @@ public partial class ApplicationUnitOfWork
         }
     }
 
-    public IReviewRepository Review => throw new NotImplementedException();
+    protected IReviewRepository? _Review;
+    public IReviewRepository Review
+    {
+        get
+        {
+            return _Review ?? (_Review = new ReviewRepository(dbContext));
+        }
+    }
 
     protected IUserRepository? _User;
     public IUserRepository User

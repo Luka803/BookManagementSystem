@@ -11,6 +11,13 @@ public class BookRepository : GenericRepository<Book>, IBookRepository
     {
     }
 
+    public async Task<bool> BookNameExist(string title)
+    {
+        var book = await _dbContext.Books
+            .SingleOrDefaultAsync(x => x.Title.ToUpper() == title.ToUpper());
+        return book != null;
+    }
+
     public async Task<List<Book>> GetBooksWithDetails()
     {
         var books = await _dbContext.Books
