@@ -7,7 +7,7 @@ public interface IBookRepository : IGenericRepository<Book>
 {
     public Task<Book> GetBookWithDetails(Guid id);
     public Task<List<Book>> GetBooksWithDetails();
-    Task<bool> BookNameExist(string title);
+    public Task<bool> BookNameExist(string title);
 }
 
 

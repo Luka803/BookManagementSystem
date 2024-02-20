@@ -10,6 +10,8 @@ namespace BookManagementSystem.Application.Exceptions
             {
                 case DbUpdateException:
                     throw new DatabaseUpdateException("Error with parent/child key delete");
+                default:
+                    throw new DefaultException();
             }
         }
     }
