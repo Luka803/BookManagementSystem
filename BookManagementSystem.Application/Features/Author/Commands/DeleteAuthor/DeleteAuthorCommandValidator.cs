@@ -10,6 +10,5 @@ public class DeleteAuthorCommandValidator : AbstractValidator<DeleteAuthorComman
     {
         this._repository = repository;
 
-
     }
 }

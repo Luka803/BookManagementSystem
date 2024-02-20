@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "9JpjhirqY5X4V2tU/bmhJL7Rp74osTxPwL8GC4WlwviNqlFVANR1X5/jIrfnhoITImFCtMxZO5UOm1KgS4vWEA==",
+  "dgSpecHash": "YHqwnxan/Rcnk0WFlq7gxsfKd3zS1BCGAB/v7jVWorxpblgfoLoOiZExQof+O1dGTrUPhjmO2jJSnLJb8rJz2w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Infrastructure\\BookManagementSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,9 @@
     "C:\\Users\\Luka\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.0\\fluentvalidation.dependencyinjectionextensions.11.9.0.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

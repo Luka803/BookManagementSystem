@@ -21,10 +21,9 @@ public class OrderController : BaseController
         return await _mediator.Send(command);
     }
 
-    [HttpDelete("delete{Id}")]
-    public async Task<Unit> DeleteOrder(Guid id)
+    [HttpDelete("delete")]
+    public async Task<Unit> DeleteOrder(DeleteOrderCommand command)
     {
-        var command = new DeleteOrderCommand(id);
         return await _mediator.Send(command);
     }
 

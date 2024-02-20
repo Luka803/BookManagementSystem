@@ -3,11 +3,11 @@ using BookManagementSystem.Application.Features.Author.Commands.AddAuthor;
 using BookManagementSystem.Application.Features.Author.Commands.DeleteAuthor;
 using BookManagementSystem.Application.Features.Author.Commands.UpdateAuthor;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthor;
-using BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 using BookManagementSystem.Application.Models;
 using MediatR;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookManagementSystem.API.Controllers;
@@ -26,16 +26,16 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorsDropdownQuery());
     }
 
-    [HttpGet("getPagedList{page}")]
-    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
+    [HttpGet("getPagedList")]
+    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(GetAuthorsPagedListQuery command)
     {
-        return await _mediator.Send(new GetAuthorsPagedListQuery(page));
+        return await _mediator.Send(command);
     }
 
-    [HttpGet("get{Id}")]
-    public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid id)
+    [HttpGet("get")]
+    public async Task<AuthorDetailsDTO> GetSingleAuthor(GetAuthorQuery command)
     {
-        return await _mediator.Send(new GetAuthorQuery(id));
+        return await _mediator.Send(command);
     }
     [HttpPost("add")]
     public async Task<ActionResult<Guid>> AddAuthor(AddAuthorCommand addAuthorCommand)
@@ -50,10 +50,9 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(updateAuthorCommand);
     }
 
-    [HttpDelete("delete{Id}")]
-    public async Task<IActionResult> DeleteAuthor(Guid id)
+    [HttpDelete("delete")]
+    public async Task<IActionResult> DeleteAuthor(DeleteAuthorCommand command)
     {
-        var command = new DeleteAuthorCommand(id);
         await _mediator.Send(command);
         return Ok();
     }

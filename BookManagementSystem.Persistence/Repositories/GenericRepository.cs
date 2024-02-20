@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.Application.Contracts.Persistence.Base;
+using BookManagementSystem.Application.Exceptions;
 using BookManagementSystem.Domain.Base;
 using BookManagementSystem.Persistence.DataBaseContext;
 using Microsoft.EntityFrameworkCore;
@@ -21,6 +22,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 
     public async Task DeleteAsync(T entity)
     {
+
         _dbContext.Remove(entity);
         await _dbContext.SaveChangesAsync();
     }

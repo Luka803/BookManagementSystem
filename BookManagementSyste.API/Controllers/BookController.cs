@@ -21,16 +21,16 @@ public class BookController : BaseController
     {
     }
 
-    [HttpGet("getWithDetails{Id}")]
-    public async Task<BookWithDetailsDTO> GetBookWithDetails(Guid id)
+    [HttpGet("getWithDetails")]
+    public async Task<BookWithDetailsDTO> GetBookWithDetails(GetBookWithDetailsQuery command)
     {
-        return await _mediator.Send(new GetBookWithDetailsQuery(id));
+        return await _mediator.Send(command);
     }
 
-    [HttpGet("getWithDetilsPagedList{page}")]
-    public async Task<PagedListDTO<BookPagedListDTO>> GetBooksWithDetailsPagedList(int page = 1)
+    [HttpGet("getWithDetilsPagedList")]
+    public async Task<PagedListDTO<BookPagedListDTO>> GetBooksWithDetailsPagedList(GetBooksPagedListQuery command)
     {
-        return await _mediator.Send(new GetBooksPagedListQuery(page));
+        return await _mediator.Send(command);
     }
 
     [HttpGet("getDropdown")]
@@ -39,10 +39,10 @@ public class BookController : BaseController
         return await _mediator.Send(new GetBooksDropDownQuery());
     }
 
-    [HttpGet("getAuthorBooksPagedList{authorId}/{page}")]
-    public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(Guid authorId, int page = 1)
+    [HttpGet("getAuthorBooksPagedList")]
+    public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(GetAuthorBooksPagedListQuery command)
     {
-        return await _mediator.Send(new GetAuthorBooksPagedListQuery(authorId, page));
+        return await _mediator.Send(command);
     }
 
     [HttpPost("add")]
@@ -57,11 +57,11 @@ public class BookController : BaseController
         return await _mediator.Send(command);
     }
 
-    [HttpDelete("delete{Id}")]
+    [HttpDelete("delete")]
 
-    public async Task<ActionResult<Unit>> DeleteBook(Guid id)
+    public async Task<ActionResult<Unit>> DeleteBook(DeleteBookCommand command)
     {
-        return await _mediator.Send(new DeleteBookCommand(id));
+        return await _mediator.Send(command);
     }
 
 }

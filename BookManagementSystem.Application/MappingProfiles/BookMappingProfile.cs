@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList;
+using BookManagementSystem.Application.Features.Book.Commands.AddBook;
 using BookManagementSystem.Application.Features.Book.Queries.GetBook;
 using BookManagementSystem.Application.Features.Book.Queries.GetBooksDropDown;
 using BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList;
@@ -16,5 +17,7 @@ public class BookMappingProfile : Profile
 
         CreateMap<BookPagedListDTO, Book>().ReverseMap();
         CreateMap<BookDropDownDTO, Book>().ReverseMap();
+
+        CreateMap<AddBookCommand, Book>().ReverseMap();
     }
 }

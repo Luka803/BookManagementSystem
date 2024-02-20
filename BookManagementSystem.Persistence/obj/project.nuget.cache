@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QN0cnBr2se8KBuvPH8DSSnV7rb0csGNpm3vt8X+/8y2Job4Nan2QsqEZxxA1xmeU2EHtKdYBOA1I/DxnOCqMsA==",
+  "dgSpecHash": "HYWw/xlJteI/ieViHMtios9rLlRO/HolXFr25QBSdkzhL305EhO0bIeRRfrNc2cYtsTPNCSHSlNCmtVbmkC1nw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
   "expectedPackageFiles": [
@@ -22,9 +22,9 @@
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
-    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.1\\microsoft.entityframeworkcore.8.0.1.nupkg.sha512",
-    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.1\\microsoft.entityframeworkcore.abstractions.8.0.1.nupkg.sha512",
-    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.1\\microsoft.entityframeworkcore.analyzers.8.0.1.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.2\\microsoft.entityframeworkcore.8.0.2.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.2\\microsoft.entityframeworkcore.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.2\\microsoft.entityframeworkcore.analyzers.8.0.2.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.1\\microsoft.entityframeworkcore.design.8.0.1.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.1\\microsoft.entityframeworkcore.relational.8.0.1.nupkg.sha512",
     "C:\\Users\\Luka\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.1\\microsoft.entityframeworkcore.sqlserver.8.0.1.nupkg.sha512",

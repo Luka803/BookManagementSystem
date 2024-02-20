@@ -211,7 +211,7 @@ namespace BookManagementSystem.Persistence.Migrations
             modelBuilder.Entity("BookManagementSystem.Domain.Book", b =>
                 {
                     b.HasOne("BookManagementSystem.Domain.Author", "Author")
-                        .WithMany()
+                        .WithMany("Books")
                         .HasForeignKey("AuthorID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -266,6 +266,11 @@ namespace BookManagementSystem.Persistence.Migrations
                     b.Navigation("Book");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BookManagementSystem.Domain.Author", b =>
+                {
+                    b.Navigation("Books");
                 });
 
             modelBuilder.Entity("BookManagementSystem.Domain.Book", b =>
