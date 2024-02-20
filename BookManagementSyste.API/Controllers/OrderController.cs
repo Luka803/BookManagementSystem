@@ -15,13 +15,13 @@ public class OrderController : BaseController
     {
     }
 
-    [HttpPost("addOrder")]
+    [HttpPost("add")]
     public async Task<Guid> AddOrder(AddOrderCommand command)
     {
         return await _mediator.Send(command);
     }
 
-    [HttpDelete("deleteOrder{Id}")]
+    [HttpDelete("delete{Id}")]
     public async Task<Unit> DeleteOrder(Guid id)
     {
         var command = new DeleteOrderCommand(id);
