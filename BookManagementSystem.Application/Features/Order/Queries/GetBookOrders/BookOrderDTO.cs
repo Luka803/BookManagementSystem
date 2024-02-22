@@ -8,6 +8,8 @@ namespace BookManagementSystem.Application.Features.Order.Queries.GetBookOrders
     {
         public string Title { get; set; } = null!;
         public Guid BookID { get; set; }
+        public Guid OrderItemID { get; set; }
+        public Guid OrderID { get; set; }
         public DateTime CreatedDate { get; set; }
         public OrderStatus Status { get; set; }
         public ICollection<AddOrderItemDTO> Items { get; set; } = new List<AddOrderItemDTO>();

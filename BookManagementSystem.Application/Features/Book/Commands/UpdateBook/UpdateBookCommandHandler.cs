@@ -25,6 +25,7 @@ public class UpdateBookCommandHandler : BaseRequestHandler<UpdateBookCommand, Gu
         _mapper.Map(request, entityToUpdate);
 
         await _repository.Books.UpdateAsync(entityToUpdate);
+        await _cache.BookCacheService.RemoveFromCache("GetBooks");
 
         return entityToUpdate.ID;
     }

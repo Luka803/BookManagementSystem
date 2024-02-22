@@ -17,9 +17,7 @@ public class GetBookWithDetailsQueryHandler : BaseRequestHandler<GetBookWithDeta
     {
         var book = await _repository.Books.GetBookWithDetails(request.id);
         if (book == null)
-        {
-            throw new NotFoundException("Book not found", request.id);
-        }
+            throw new NotFoundException(nameof(Book), request.id);
 
         return _mapper.Map<BookWithDetailsDTO>(book);
     }

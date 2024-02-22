@@ -17,6 +17,7 @@ public class DeleteBookCommandHandler : BaseRequestHandler<DeleteBookCommand, Un
         var entityToDelete = await _repository.Books.GetAsync(request.id);
 
         await _repository.Books.DeleteAsync(entityToDelete);
+        await _cache.BookCacheService.RemoveFromCache("GetBooks");
 
         return Unit.Value;
     }

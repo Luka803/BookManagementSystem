@@ -17,17 +17,10 @@ public class DeleteAuthorCommandHandler : BaseRequestHandler<DeleteAuthorCommand
         var entity = await _repository.Author.GetAsync(request.id);
 
         if (entity == null)
-            throw new BadRequestException("Author not found");
+            throw new NotFoundException(nameof(Author), request.id);
 
-        try
-        {
-            await _repository.Author.DeleteAsync(entity);
-            await _cache.AuthorCacheService.RemoveFromCache("GetAuthors");
-        }
-        catch (Exception ex)
-        {
-            ExceptionHandler.HandleException(ex);
-        }
+        await _repository.Author.DeleteAsync(entity);
+        await _cache.AuthorCacheService.RemoveFromCache("GetAuthors");
 
         return Unit.Value;
 

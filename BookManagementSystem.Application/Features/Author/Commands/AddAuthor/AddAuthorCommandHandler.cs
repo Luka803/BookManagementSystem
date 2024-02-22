@@ -30,6 +30,7 @@ public class AddAuthorCommandHandler : BaseRequestHandler<AddAuthorCommand, Guid
 
         await _repository.Author.CreateAsync(entity);
 
+        await _cache.AuthorCacheService.RemoveFromCache("GetAuthors");
 
         return entity.ID;
     }

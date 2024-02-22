@@ -16,7 +16,7 @@ public static class PersistenceServiceRegistration
     {
         services.AddDbContext<BookManagementSystemDbContext>(opt =>
         {
-            opt.UseSqlServer(config.GetConnectionString("DefaultConnString"));
+            opt.UseSqlServer(config.GetConnectionString("DesktopConnString"));
         });
         services.AddTransient<IApplicationUnitOfWorkRepository, ApplicationUnitOfWork>();
 
