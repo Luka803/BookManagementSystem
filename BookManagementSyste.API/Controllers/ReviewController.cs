@@ -14,9 +14,10 @@ public class ReviewController : BaseController
     {
     }
 
-    [HttpGet("getBookReviewsPagedList")]
-    public async Task<PagedListDTO<BookReviewsPagedListDTO>> GetBookReviewsPagedList(GetBookReviewsPagedListQuery command)
+    [HttpGet("getBookReviewsPagedList{bookId}/{page}")]
+    public async Task<PagedListDTO<BookReviewsPagedListDTO>> GetBookReviewsPagedList(Guid bookId, int page = 1)
     {
+        var command = new GetBookReviewsPagedListQuery(bookId, page);
         return await _mediator.Send(command);
     }
 }

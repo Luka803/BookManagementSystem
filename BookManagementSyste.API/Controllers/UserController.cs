@@ -20,9 +20,10 @@ public class UserController : BaseController
     {
         return await _mediator.Send(command);
     }
-    [HttpGet("get")]
-    public async Task<UserDetailsDTO> GetSingeUser(GetUserDetailsQuery command)
+    [HttpGet("get{userId}")]
+    public async Task<UserDetailsDTO> GetSingeUser(Guid userId)
     {
+        var command = new GetUserDetailsQuery(userId);
         return await _mediator.Send(command);
     }
 }

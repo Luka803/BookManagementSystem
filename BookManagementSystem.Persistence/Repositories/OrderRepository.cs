@@ -10,12 +10,6 @@ public class OrderRepository : GenericRepository<Order>, IOrderRepository
     public OrderRepository(BookManagementSystemDbContext dbContext) : base(dbContext)
     {
     }
-
-    public async Task<List<Order>> GetBookOrders(Guid bookID)
-    {
-        return new List<Order>();
-    }
-
     public async Task<Order> GetOrderWithItems(Guid id)
     {
         return await _dbContext.Orders

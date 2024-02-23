@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Contracts.Logging;
 using BookManagementSystem.Application.Features.Base;
-using BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
 
@@ -15,13 +14,13 @@ public class GetBookOrdersPagedListQueryHandler : BaseRequestHandler<GetBookOrde
 
     protected override async Task<PagedListDTO<BookOrderDTO>> HandleCore(GetBookOrdersPagedListQuery request, CancellationToken cancellationToken)
     {
-        var pagedList = new PagedList<BookOrderDTO>(new MyDomain.Order());
+        var pagedList = new PagedList<BookOrderDTO>(new MyDomain.OrderItem());
 
         pagedList.PageNumber = request.page;
 
-        pagedList.DbItems = await _cache.OrderCacheService.GetOrSet(
+        pagedList.DbItems = await _cache.OrderItemCacheService.GetOrSet(
             "GetBookOrders",
-            () => Task.Run(async () => (await _repository.Order.GetBookOrders(request.bookID))).Result,
+            () => Task.Run(async () => (await _repository.OrderItem.GetBookOrders(request.bookID))).Result,
             TimeSpan.FromMinutes(1)
             );
 

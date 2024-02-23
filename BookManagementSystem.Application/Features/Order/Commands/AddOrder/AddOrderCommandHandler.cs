@@ -26,6 +26,8 @@ public class AddOrderCommandHandler : BaseRequestHandler<AddOrderCommand, Guid>
             var book = await _repository.Books.GetAsync(item.BookID);
             item.OrderID = orderToAdd.ID;
             item.ItemNumber = itemNumber++;
+            item.Price = item.Count * book.Price;
+
             totalCount += item.Count;
             totalPrice += item.Count * book.Price;
 

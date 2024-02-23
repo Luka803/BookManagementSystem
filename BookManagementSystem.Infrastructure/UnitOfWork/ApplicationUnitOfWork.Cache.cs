@@ -26,7 +26,15 @@ public partial class ApplicationUnitOfWorkCache : IApplicationUnitOfWorkCache
 
     public IOrderMemoryCacheService OrderCacheService => throw new NotImplementedException();
 
-    public IOrderItemMemoryCacheService OrderItemCacheService => throw new NotImplementedException();
+
+    protected IOrderItemMemoryCacheService? _orderItemMemoryCacheService;
+    public IOrderItemMemoryCacheService OrderItemCacheService
+    {
+        get
+        {
+            return _orderItemMemoryCacheService ?? (_orderItemMemoryCacheService = new OrderItemCacheService(_cacheService));
+        }
+    }
 
     public IReviewMemoryCacheService ReviewMemoryCacheService => throw new NotImplementedException();
 
