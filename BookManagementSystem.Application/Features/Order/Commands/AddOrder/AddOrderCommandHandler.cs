@@ -14,6 +14,13 @@ public class AddOrderCommandHandler : BaseRequestHandler<AddOrderCommand, Guid>
 
     protected override async Task<Guid> HandleCore(AddOrderCommand request, CancellationToken cancellationToken)
     {
+
+        var validator = new AddOrderCommandValidator(_repository);
+        var validationResult = await validator.ValidateAsync(request, cancellationToken);
+
+        if (validationResult.Errors.Any())
+            throw new FluentValidationException("Validation errors", validationResult);
+
         int itemNumber = 1;
         int totalCount = 0;
         decimal totalPrice = 0;

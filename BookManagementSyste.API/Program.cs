@@ -1,6 +1,7 @@
 using BookManagementSystem.Persistence;
 using BookManagementSystem.Application;
 using BookManagementSystem.Infrastructure;
+using BookManagementSystem.API.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
