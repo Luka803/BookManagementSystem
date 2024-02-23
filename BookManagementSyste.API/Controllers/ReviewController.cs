@@ -1,4 +1,5 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
+using BookManagementSystem.Application.Features.Review.Commands.AddReview;
 using BookManagementSystem.Application.Features.Review.Queries.GetBookReviewsPagedList;
 using BookManagementSystem.Application.Models;
 using MediatR;
@@ -18,6 +19,12 @@ public class ReviewController : BaseController
     public async Task<PagedListDTO<BookReviewsPagedListDTO>> GetBookReviewsPagedList(Guid bookId, int page = 1)
     {
         var command = new GetBookReviewsPagedListQuery(bookId, page);
+        return await _mediator.Send(command);
+    }
+
+    [HttpPost("add")]
+    public async Task<Guid> AddReview(AddReviewCommand command)
+    {
         return await _mediator.Send(command);
     }
 }

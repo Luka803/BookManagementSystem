@@ -1,5 +1,5 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
-using BookManagementSystem.Application.Features.Order.Queries.GetBookOrders;
+using BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders;
 using BookManagementSystem.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

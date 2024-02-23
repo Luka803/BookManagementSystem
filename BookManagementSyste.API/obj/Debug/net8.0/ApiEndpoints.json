@@ -374,6 +374,63 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
+    "Method": "GetUserOrders",
+    "RelativePath": "api/order/getUserOrders{userId}/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Order.Queries.GetUserOrdersPagedList.UserOrdersDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
+    "Method": "UpdateOrder",
+    "RelativePath": "api/order/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookManagementSystem.Application.Features.Order.Commands.UpdateOrder.UpdateOrderCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
     "Method": "UpdateOrderStatus",
     "RelativePath": "api/order/updateOrderStatus",
     "HttpMethod": "PUT",
@@ -419,7 +476,33 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Order.Queries.GetBookOrders.BookOrderDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders.BookOrderDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.ReviewController",
+    "Method": "AddReview",
+    "RelativePath": "api/review/add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "BookManagementSystem.Application.Features.Review.Commands.AddReview.AddReviewCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
         "MediaTypes": [
           "text/plain",
           "application/json",

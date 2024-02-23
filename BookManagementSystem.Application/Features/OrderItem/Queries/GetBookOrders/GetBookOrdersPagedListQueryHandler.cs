@@ -4,7 +4,7 @@ using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
 
-namespace BookManagementSystem.Application.Features.Order.Queries.GetBookOrders;
+namespace BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders;
 
 public class GetBookOrdersPagedListQueryHandler : BaseRequestHandler<GetBookOrdersPagedListQuery, PagedListDTO<BookOrderDTO>>
 {
@@ -20,7 +20,7 @@ public class GetBookOrdersPagedListQueryHandler : BaseRequestHandler<GetBookOrde
 
         pagedList.DbItems = await _cache.OrderItemCacheService.GetOrSet(
             "GetBookOrders",
-            () => Task.Run(async () => (await _repository.OrderItem.GetBookOrders(request.bookID))).Result,
+            () => Task.Run(async () => await _repository.OrderItem.GetBookOrders(request.bookID)).Result,
             TimeSpan.FromMinutes(1)
             );
 

@@ -1,7 +1,10 @@
 ﻿using BookManagementSystem.API.Controllers.Base;
 using BookManagementSystem.Application.Features.Order.Commands.AddOrder;
 using BookManagementSystem.Application.Features.Order.Commands.DeleteOrder;
+using BookManagementSystem.Application.Features.Order.Commands.UpdateOrder;
 using BookManagementSystem.Application.Features.Order.Commands.UpdateOrderStatus;
+using BookManagementSystem.Application.Features.Order.Queries.GetUserOrdersPagedList;
+using BookManagementSystem.Application.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
@@ -32,4 +35,21 @@ public class OrderController : BaseController
     {
         return await _mediator.Send(command);
     }
+
+    [HttpPut("update")]
+    public async Task<Guid> UpdateOrder(UpdateOrderCommand command)
+    {
+        return await _mediator.Send(command);
+    }
+
+    [HttpGet("getUserOrders{userId}/{page}")]
+
+    public async Task<PagedListDTO<UserOrdersDTO>> GetUserOrders(Guid userId, int page)
+    {
+        var command = new GetUserOrdersPagedListQuery(userId, page);
+        return await _mediator.Send(command);
+
+    }
+
+
 }

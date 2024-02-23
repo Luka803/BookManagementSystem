@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using BookManagementSystem.Application.Features.Order.Commands.AddOrder;
-using BookManagementSystem.Application.Features.Order.Queries.GetBookOrders;
+using BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders;
 
 namespace BookManagementSystem.Application.MappingProfiles;
 

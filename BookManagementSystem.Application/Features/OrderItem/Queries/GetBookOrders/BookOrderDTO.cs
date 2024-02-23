@@ -1,7 +1,7 @@
 ﻿using BookManagementSystem.Application.Models;
 using BookManagementSystem.Domain.Enums;
 
-namespace BookManagementSystem.Application.Features.Order.Queries.GetBookOrders;
+namespace BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders;
 
 public class BookOrderDTO : BaseDTO
 {

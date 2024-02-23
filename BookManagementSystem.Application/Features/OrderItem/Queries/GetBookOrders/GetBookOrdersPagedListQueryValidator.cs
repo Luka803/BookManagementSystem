@@ -1,14 +1,14 @@
 ﻿using BookManagementSystem.Application.UnitOfWork;
 using FluentValidation;
 
-namespace BookManagementSystem.Application.Features.Order.Queries.GetBookOrders;
+namespace BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders;
 
 public class GetBookOrdersPagedListQueryValidator : AbstractValidator<GetBookOrdersPagedListQuery>
 {
     private readonly IApplicationUnitOfWorkRepository _repository;
     public GetBookOrdersPagedListQueryValidator(IApplicationUnitOfWorkRepository repository)
     {
-        this._repository = repository;
+        _repository = repository;
 
         RuleFor(x => x)
             .MustAsync(BookExist)

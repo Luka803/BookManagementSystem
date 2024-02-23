@@ -17,5 +17,11 @@ public class OrderRepository : GenericRepository<Order>, IOrderRepository
             .SingleOrDefaultAsync(x => x.ID == id);
     }
 
-
+    public async Task<IReadOnlyList<Order>> GetUserOrders(Guid userId)
+    {
+        var orders = await _dbContext.Orders
+            .Where(x => x.UserID == userId)
+            .ToListAsync();
+        return orders;
+    }
 }
