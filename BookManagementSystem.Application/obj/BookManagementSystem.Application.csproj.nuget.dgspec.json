@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {}
+    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
+    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
+        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
         "projectName": "BookManagementSystem.Application",
-        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
-        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\obj\\",
+        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,8 +28,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
-                "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
+              "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
               }
             }
           }
@@ -42,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -93,25 +94,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "projectName": "BookManagementSystem.Domain",
-        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
+        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -131,6 +128,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -152,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{25691F5E-C044-41D9-AE74-4E9FECFAA22B}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25691F5E-C044-41D9-AE74-4E9FECFAA22B}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +23,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthorService.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Services\\AuthorService.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Services\\AuthorService.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Services\\AuthorService.cs",
+              "RelativeToolTip": "BookManagementSystem.UI\\Services\\AuthorService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-24T15:30:20.84Z",
+              "EditorCaption": ""
             }
           ]
         },

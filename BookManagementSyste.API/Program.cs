@@ -11,6 +11,14 @@ builder.Services.AddInfrastructureServices();
 
 builder.Services.AddControllers();
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("all", builder => builder.AllowAnyOrigin()
+    .AllowAnyMethod()
+    .AllowAnyHeader());
+
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -26,6 +34,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("all");
 
 app.UseAuthorization();
 

@@ -20,39 +20,39 @@ public partial class AuthorController : BaseController
     {
     }
 
-    [HttpGet("getDropdown")]
+    [HttpGet("getAuthorsDropdown")]
     public async Task<List<AuthorDropdownDTO>> GetAuthorsDropdown()
     {
         return await _mediator.Send(new GetAuthorsDropdownQuery());
     }
 
-    [HttpGet("getPagedList{page}")]
+    [HttpGet("getAuthorsPagedList/{page}")]
     public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
     {
         var command = new GetAuthorsPagedListQuery(page);
         return await _mediator.Send(command);
     }
 
-    [HttpGet("get{authorId}")]
+    [HttpGet("get/{authorId}")]
     public async Task<AuthorDetailsDTO> GetSingleAuthor(Guid authorId)
     {
         var command = new GetAuthorQuery(authorId);
         return await _mediator.Send(command);
     }
-    [HttpPost("add")]
+    [HttpPost("addAuthor")]
     public async Task<ActionResult<Guid>> AddAuthor(AddAuthorCommand addAuthorCommand)
     {
         var response = await _mediator.Send(addAuthorCommand);
         return Ok(response);
     }
 
-    [HttpPut("update")]
+    [HttpPut("updateAuthor")]
     public async Task<Guid> UpdateAuthor(UpdateAuthorCommand updateAuthorCommand)
     {
         return await _mediator.Send(updateAuthorCommand);
     }
 
-    [HttpDelete("delete")]
+    [HttpDelete("deleteAuthor")]
     public async Task<IActionResult> DeleteAuthor(DeleteAuthorCommand command)
     {
         await _mediator.Send(command);

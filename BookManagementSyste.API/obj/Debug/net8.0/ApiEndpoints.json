@@ -2,7 +2,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "AddAuthor",
-    "RelativePath": "api/author/add",
+    "RelativePath": "api/author/addAuthor",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "DeleteAuthor",
-    "RelativePath": "api/author/delete",
+    "RelativePath": "api/author/deleteAuthor",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -70,7 +70,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsDropdown",
-    "RelativePath": "api/author/getDropdown",
+    "RelativePath": "api/author/getAuthorsDropdown",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -90,7 +90,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsPagedList",
-    "RelativePath": "api/author/getPagedList{page}",
+    "RelativePath": "api/author/getAuthorsPagedList{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -116,7 +116,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "UpdateAuthor",
-    "RelativePath": "api/author/update",
+    "RelativePath": "api/author/updateAuthor",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -142,7 +142,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "AddBook",
-    "RelativePath": "api/book/add",
+    "RelativePath": "api/book/addBook",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -168,7 +168,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "DeleteBook",
-    "RelativePath": "api/book/delete",
+    "RelativePath": "api/book/deleteBook",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -224,8 +224,8 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
-    "Method": "GetBooksDropDown",
-    "RelativePath": "api/book/getDropdown",
+    "Method": "GetBooksDropdown",
+    "RelativePath": "api/book/getBooksDropdown",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -244,34 +244,8 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
-    "Method": "GetBookWithDetails",
-    "RelativePath": "api/book/getWithDetails{bookId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bookId",
-        "Type": "System.Guid",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "BookManagementSystem.Application.Features.Book.Queries.GetBook.BookWithDetailsDTO",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "GetBooksWithDetailsPagedList",
-    "RelativePath": "api/book/getWithDetilsPagedList{page}",
+    "RelativePath": "api/book/getBooksWithDetilsPagedList{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -296,8 +270,34 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetBookWithDetails",
+    "RelativePath": "api/book/getBookWithDetails{bookId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "bookId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BookManagementSystem.Application.Features.Book.Queries.GetBook.BookWithDetailsDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "UpdateBook",
-    "RelativePath": "api/book/update",
+    "RelativePath": "api/book/updateBook",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -323,7 +323,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
     "Method": "AddOrder",
-    "RelativePath": "api/order/add",
+    "RelativePath": "api/order/addOrder",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -349,7 +349,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
     "Method": "DeleteOrder",
-    "RelativePath": "api/order/delete",
+    "RelativePath": "api/order/deleteOrder",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -406,7 +406,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
     "Method": "UpdateOrder",
-    "RelativePath": "api/order/update",
+    "RelativePath": "api/order/updateOrder",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,

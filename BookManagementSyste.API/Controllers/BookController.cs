@@ -21,22 +21,22 @@ public class BookController : BaseController
     {
     }
 
-    [HttpGet("getWithDetails{bookId}")]
+    [HttpGet("getBookWithDetails{bookId}")]
     public async Task<BookWithDetailsDTO> GetBookWithDetails(Guid bookId)
     {
         var command = new GetBookWithDetailsQuery(bookId);
         return await _mediator.Send(command);
     }
 
-    [HttpGet("getWithDetilsPagedList{page}")]
+    [HttpGet("getBooksWithDetilsPagedList{page}")]
     public async Task<PagedListDTO<BookPagedListDTO>> GetBooksWithDetailsPagedList(int page = 1)
     {
         var command = new GetBooksPagedListQuery(page);
         return await _mediator.Send(command);
     }
 
-    [HttpGet("getDropdown")]
-    public async Task<List<BookDropDownDTO>> GetBooksDropDown()
+    [HttpGet("getBooksDropdown")]
+    public async Task<List<BookDropDownDTO>> GetBooksDropdown()
     {
         return await _mediator.Send(new GetBooksDropDownQuery());
     }
@@ -49,19 +49,19 @@ public class BookController : BaseController
     }
 
 
-    [HttpPost("add")]
+    [HttpPost("addBook")]
     public async Task<Guid> AddBook(AddBookCommand command)
     {
         return await _mediator.Send(command);
     }
 
-    [HttpPut("update")]
+    [HttpPut("updateBook")]
     public async Task<Guid> UpdateBook(UpdateBookCommand command)
     {
         return await _mediator.Send(command);
     }
 
-    [HttpDelete("delete")]
+    [HttpDelete("deleteBook")]
 
     public async Task<ActionResult<Unit>> DeleteBook(DeleteBookCommand command)
     {
