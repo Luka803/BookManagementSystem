@@ -28,11 +28,12 @@ public class BookController : BaseController
         return await _mediator.Send(command);
     }
 
-    [HttpGet("getBooksWithDetilsPagedList{page}")]
-    public async Task<PagedListDTO<BookPagedListDTO>> GetBooksWithDetailsPagedList(int page = 1)
+    [HttpGet("getBooksWithDetils{page}")]
+    public async Task<IReadOnlyList<BookPagedListDTO>> GetBooksWithDetailsPagedList(int page = 1)
     {
         var command = new GetBooksPagedListQuery(page);
-        return await _mediator.Send(command);
+        var result = await _mediator.Send(command);
+        return result.Items;
     }
 
     [HttpGet("getBooksDropdown")]
@@ -41,11 +42,12 @@ public class BookController : BaseController
         return await _mediator.Send(new GetBooksDropDownQuery());
     }
 
-    [HttpGet("getAuthorBooksPagedList{authorId}/{page}")]
-    public async Task<PagedListDTO<AuthorBooksDTO>> GetAuthorBooks(Guid authorId, int page = 1)
+    [HttpGet("getAuthorBooks{authorId}/{page}")]
+    public async Task<IReadOnlyList<AuthorBooksDTO>> GetAuthorBooks(Guid authorId, int page = 1)
     {
         var command = new GetAuthorBooksPagedListQuery(authorId, page);
-        return await _mediator.Send(command);
+        var result = await _mediator.Send(command);
+        return result.Items;
     }
 
 

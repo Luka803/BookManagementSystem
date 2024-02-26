@@ -34,21 +34,21 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorPagedListDTOPagedListDTO> AuthorAsync(int page);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorPagedListDTO>> GetAuthorsAsync(int page);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorPagedListDTOPagedListDTO> AuthorAsync(int page, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorPagedListDTO>> GetAuthorsAsync(int page, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorDetailsDTO> Author2Async(System.Guid authorId);
+        System.Threading.Tasks.Task<AuthorDetailsDTO> GetAsync(System.Guid authorId);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorDetailsDTO> Author2Async(System.Guid authorId, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<AuthorDetailsDTO> GetAsync(System.Guid authorId, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -88,12 +88,12 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookPagedListDTOPagedListDTO> Book2Async(int page);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookPagedListDTO>> BookAllAsync(int page);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookPagedListDTOPagedListDTO> Book2Async(int page, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookPagedListDTO>> BookAllAsync(int page, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -106,12 +106,12 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorBooksDTOPagedListDTO> Book3Async(System.Guid authorId, int page);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorBooksDTO>> BookAll2Async(System.Guid authorId, int page);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<AuthorBooksDTOPagedListDTO> Book3Async(System.Guid authorId, int page, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorBooksDTO>> BookAll2Async(System.Guid authorId, int page, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -178,30 +178,30 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<UserOrdersDTOPagedListDTO> OrderAsync(System.Guid userId, int page);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<UserOrdersDTO>> OrderAsync(System.Guid userId, int page);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<UserOrdersDTOPagedListDTO> OrderAsync(System.Guid userId, int page, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<UserOrdersDTO>> OrderAsync(System.Guid userId, int page, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookOrderDTOPagedListDTO> OrderItemAsync(System.Guid bookId, int page);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookOrderDTOPagedListDTO> OrderItemAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookReviewsPagedListDTOPagedListDTO> ReviewAsync(System.Guid bookId, int page);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookOrderDTO>> OrderItemAsync(System.Guid bookId, int page);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<BookReviewsPagedListDTOPagedListDTO> ReviewAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookOrderDTO>> OrderItemAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookReviewsPagedListDTO>> ReviewAsync(System.Guid bookId, int page);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookReviewsPagedListDTO>> ReviewAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
@@ -342,15 +342,15 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<AuthorPagedListDTOPagedListDTO> AuthorAsync(int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorPagedListDTO>> GetAuthorsAsync(int page)
         {
-            return AuthorAsync(page, System.Threading.CancellationToken.None);
+            return GetAuthorsAsync(page, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AuthorPagedListDTOPagedListDTO> AuthorAsync(int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorPagedListDTO>> GetAuthorsAsync(int page, System.Threading.CancellationToken cancellationToken)
         {
             if (page == null)
                 throw new System.ArgumentNullException("page");
@@ -366,8 +366,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/author/getAuthorsPagedList{page}"
-                    urlBuilder_.Append("api/author/getAuthorsPagedList");
+                    // Operation Path: "api/author/getAuthors/{page}"
+                    urlBuilder_.Append("api/author/getAuthors/");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(page, System.Globalization.CultureInfo.InvariantCulture)));
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -395,7 +395,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<AuthorPagedListDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<AuthorPagedListDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -424,15 +424,15 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<AuthorDetailsDTO> Author2Async(System.Guid authorId)
+        public virtual System.Threading.Tasks.Task<AuthorDetailsDTO> GetAsync(System.Guid authorId)
         {
-            return Author2Async(authorId, System.Threading.CancellationToken.None);
+            return GetAsync(authorId, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AuthorDetailsDTO> Author2Async(System.Guid authorId, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<AuthorDetailsDTO> GetAsync(System.Guid authorId, System.Threading.CancellationToken cancellationToken)
         {
             if (authorId == null)
                 throw new System.ArgumentNullException("authorId");
@@ -448,8 +448,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/author/get{authorId}"
-                    urlBuilder_.Append("api/author/get");
+                    // Operation Path: "api/author/get/{authorId}"
+                    urlBuilder_.Append("api/author/get/");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(authorId, System.Globalization.CultureInfo.InvariantCulture)));
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -828,15 +828,15 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<BookPagedListDTOPagedListDTO> Book2Async(int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookPagedListDTO>> BookAllAsync(int page)
         {
-            return Book2Async(page, System.Threading.CancellationToken.None);
+            return BookAllAsync(page, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<BookPagedListDTOPagedListDTO> Book2Async(int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookPagedListDTO>> BookAllAsync(int page, System.Threading.CancellationToken cancellationToken)
         {
             if (page == null)
                 throw new System.ArgumentNullException("page");
@@ -852,8 +852,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/book/getBooksWithDetilsPagedList{page}"
-                    urlBuilder_.Append("api/book/getBooksWithDetilsPagedList");
+                    // Operation Path: "api/book/getBooksWithDetils{page}"
+                    urlBuilder_.Append("api/book/getBooksWithDetils");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(page, System.Globalization.CultureInfo.InvariantCulture)));
 
                     PrepareRequest(client_, request_, urlBuilder_);
@@ -881,7 +881,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<BookPagedListDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<BookPagedListDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -988,15 +988,15 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<AuthorBooksDTOPagedListDTO> Book3Async(System.Guid authorId, int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorBooksDTO>> BookAll2Async(System.Guid authorId, int page)
         {
-            return Book3Async(authorId, page, System.Threading.CancellationToken.None);
+            return BookAll2Async(authorId, page, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<AuthorBooksDTOPagedListDTO> Book3Async(System.Guid authorId, int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<AuthorBooksDTO>> BookAll2Async(System.Guid authorId, int page, System.Threading.CancellationToken cancellationToken)
         {
             if (authorId == null)
                 throw new System.ArgumentNullException("authorId");
@@ -1015,8 +1015,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/book/getAuthorBooksPagedList{authorId}/{page}"
-                    urlBuilder_.Append("api/book/getAuthorBooksPagedList");
+                    // Operation Path: "api/book/getAuthorBooks{authorId}/{page}"
+                    urlBuilder_.Append("api/book/getAuthorBooks");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(authorId, System.Globalization.CultureInfo.InvariantCulture)));
                     urlBuilder_.Append('/');
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(page, System.Globalization.CultureInfo.InvariantCulture)));
@@ -1046,7 +1046,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<AuthorBooksDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<AuthorBooksDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -1649,7 +1649,7 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<UserOrdersDTOPagedListDTO> OrderAsync(System.Guid userId, int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<UserOrdersDTO>> OrderAsync(System.Guid userId, int page)
         {
             return OrderAsync(userId, page, System.Threading.CancellationToken.None);
         }
@@ -1657,7 +1657,7 @@ namespace BookManagementSystem.UI.Services.Base
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<UserOrdersDTOPagedListDTO> OrderAsync(System.Guid userId, int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<UserOrdersDTO>> OrderAsync(System.Guid userId, int page, System.Threading.CancellationToken cancellationToken)
         {
             if (userId == null)
                 throw new System.ArgumentNullException("userId");
@@ -1676,8 +1676,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/order/getUserOrders{userId}/{page}"
-                    urlBuilder_.Append("api/order/getUserOrders");
+                    // Operation Path: "api/order/getUser{userId}/{page}"
+                    urlBuilder_.Append("api/order/getUser");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(userId, System.Globalization.CultureInfo.InvariantCulture)));
                     urlBuilder_.Append('/');
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(page, System.Globalization.CultureInfo.InvariantCulture)));
@@ -1707,7 +1707,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<UserOrdersDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<UserOrdersDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -1736,7 +1736,7 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<BookOrderDTOPagedListDTO> OrderItemAsync(System.Guid bookId, int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookOrderDTO>> OrderItemAsync(System.Guid bookId, int page)
         {
             return OrderItemAsync(bookId, page, System.Threading.CancellationToken.None);
         }
@@ -1744,7 +1744,7 @@ namespace BookManagementSystem.UI.Services.Base
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<BookOrderDTOPagedListDTO> OrderItemAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookOrderDTO>> OrderItemAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken)
         {
             if (bookId == null)
                 throw new System.ArgumentNullException("bookId");
@@ -1794,7 +1794,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<BookOrderDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<BookOrderDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -1823,7 +1823,7 @@ namespace BookManagementSystem.UI.Services.Base
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<BookReviewsPagedListDTOPagedListDTO> ReviewAsync(System.Guid bookId, int page)
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookReviewsPagedListDTO>> ReviewAsync(System.Guid bookId, int page)
         {
             return ReviewAsync(bookId, page, System.Threading.CancellationToken.None);
         }
@@ -1831,7 +1831,7 @@ namespace BookManagementSystem.UI.Services.Base
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<BookReviewsPagedListDTOPagedListDTO> ReviewAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<BookReviewsPagedListDTO>> ReviewAsync(System.Guid bookId, int page, System.Threading.CancellationToken cancellationToken)
         {
             if (bookId == null)
                 throw new System.ArgumentNullException("bookId");
@@ -1850,8 +1850,8 @@ namespace BookManagementSystem.UI.Services.Base
 
                     var urlBuilder_ = new System.Text.StringBuilder();
                 
-                    // Operation Path: "api/review/getBookReviewsPagedList{bookId}/{page}"
-                    urlBuilder_.Append("api/review/getBookReviewsPagedList");
+                    // Operation Path: "api/review/getBookReviews{bookId}/{page}"
+                    urlBuilder_.Append("api/review/getBookReviews");
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(bookId, System.Globalization.CultureInfo.InvariantCulture)));
                     urlBuilder_.Append('/');
                     urlBuilder_.Append(System.Uri.EscapeDataString(ConvertToString(page, System.Globalization.CultureInfo.InvariantCulture)));
@@ -1881,7 +1881,7 @@ namespace BookManagementSystem.UI.Services.Base
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<BookReviewsPagedListDTOPagedListDTO>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<BookReviewsPagedListDTO>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -2381,24 +2381,6 @@ namespace BookManagementSystem.UI.Services.Base
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AuthorBooksDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<AuthorBooksDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class AuthorDetailsDTO
     {
 
@@ -2453,24 +2435,6 @@ namespace BookManagementSystem.UI.Services.Base
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class AuthorPagedListDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<AuthorPagedListDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BookDropDownDTO
     {
 
@@ -2513,24 +2477,6 @@ namespace BookManagementSystem.UI.Services.Base
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BookOrderDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<BookOrderDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BookPagedListDTO
     {
 
@@ -2543,47 +2489,11 @@ namespace BookManagementSystem.UI.Services.Base
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BookPagedListDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<BookPagedListDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
     public partial class BookReviewsPagedListDTO
     {
 
         [System.Text.Json.Serialization.JsonPropertyName("id")]
         public System.Guid Id { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class BookReviewsPagedListDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<BookReviewsPagedListDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
 
     }
 
@@ -2781,24 +2691,6 @@ namespace BookManagementSystem.UI.Services.Base
 
         [System.Text.Json.Serialization.JsonPropertyName("modifiedDate")]
         public System.DateTimeOffset ModifiedDate { get; set; }
-
-    }
-
-    [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "14.0.3.0 (NJsonSchema v11.0.0.0 (Newtonsoft.Json v13.0.0.0))")]
-    public partial class UserOrdersDTOPagedListDTO
-    {
-
-        [System.Text.Json.Serialization.JsonPropertyName("items")]
-        public System.Collections.Generic.ICollection<UserOrdersDTO> Items { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalItems")]
-        public int TotalItems { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("pageNumber")]
-        public int PageNumber { get; set; }
-
-        [System.Text.Json.Serialization.JsonPropertyName("totalPages")]
-        public int TotalPages { get; set; }
 
     }
 

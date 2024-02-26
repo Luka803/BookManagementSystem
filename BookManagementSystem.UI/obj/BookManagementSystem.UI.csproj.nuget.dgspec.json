@@ -69,10 +69,6 @@
               "target": "Package",
               "version": "[8.0.2, )",
               "autoReferenced": true
-            },
-            "System.Net.Http.Json": {
-              "target": "Package",
-              "version": "[8.0.0, )"
             }
           },
           "imports": [

@@ -1,5 +1,4 @@
 ﻿using BookManagementSystem.UI.Contracts;
-using BookManagementSystem.UI.Models;
 using BookManagementSystem.UI.Services.Base;
 
 namespace BookManagementSystem.UI.Services;
@@ -10,8 +9,10 @@ public class AuthorService : BaseHttpService, IAuthorService
     {
     }
 
-    public Task<List<AuthorVM>> GetAuthors()
+    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthors()
     {
-        throw new NotImplementedException();
+        var authors = await _client.GetAuthorsAsync(1);
+        return authors.ToList();
     }
+
 }

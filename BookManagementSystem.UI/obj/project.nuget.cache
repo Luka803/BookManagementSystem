@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6oym6TYK9mFAZsskZ7eNhovwx3B/sMkPloH+WYBTtLdR3yRsB6XFk0Y7va/DB8MO7k5/5Vk7iQFAUDMHCbN5AQ==",
+  "dgSpecHash": "x/GbodtfageHl80IrC+ASqH+Gx1fBxNCBOuoGsfqrur6xp6Yhk8ltHihZjMm0Xjari+uJLFNSigJwxHD0NAnDA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\BookManagementSystem.UI.csproj",
   "expectedPackageFiles": [
@@ -36,7 +36,6 @@
     "C:\\Users\\lukak\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.2\\microsoft.net.sdk.webassembly.pack.8.0.2.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
-    "C:\\Users\\lukak\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\lukak\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.2\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.2.nupkg.sha512"

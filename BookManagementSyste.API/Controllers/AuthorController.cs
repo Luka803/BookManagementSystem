@@ -26,11 +26,12 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorsDropdownQuery());
     }
 
-    [HttpGet("getAuthorsPagedList/{page}")]
-    public async Task<PagedListDTO<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
+    [HttpGet("getAuthors/{page}")]
+    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
     {
         var command = new GetAuthorsPagedListQuery(page);
-        return await _mediator.Send(command);
+        var result = await _mediator.Send(command);
+        return result.Items;
     }
 
     [HttpGet("get/{authorId}")]

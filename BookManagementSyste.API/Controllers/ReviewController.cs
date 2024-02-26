@@ -15,11 +15,12 @@ public class ReviewController : BaseController
     {
     }
 
-    [HttpGet("getBookReviewsPagedList{bookId}/{page}")]
-    public async Task<PagedListDTO<BookReviewsPagedListDTO>> GetBookReviewsPagedList(Guid bookId, int page = 1)
+    [HttpGet("getBookReviews{bookId}/{page}")]
+    public async Task<IReadOnlyList<BookReviewsPagedListDTO>> GetBookReviewsPagedList(Guid bookId, int page = 1)
     {
         var command = new GetBookReviewsPagedListQuery(bookId, page);
-        return await _mediator.Send(command);
+        var result = await _mediator.Send(command);
+        return result.Items;
     }
 
     [HttpPost("add")]

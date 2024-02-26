@@ -4,11 +4,13 @@
     "Projects": [
       {
         "Name": "BookManagementSyste.API\\BookManagementSystem.API.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       },
       {
         "Name": "BookManagementSystem.UI\\BookManagementSystem.UI.csproj",
-        "Action": "Start"
+        "Action": "Start",
+        "DebugTarget": ""
       }
     ]
   }

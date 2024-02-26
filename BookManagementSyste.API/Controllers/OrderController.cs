@@ -42,12 +42,13 @@ public class OrderController : BaseController
         return await _mediator.Send(command);
     }
 
-    [HttpGet("getUserOrders{userId}/{page}")]
+    [HttpGet("getUser{userId}/{page}")]
 
-    public async Task<PagedListDTO<UserOrdersDTO>> GetUserOrders(Guid userId, int page)
+    public async Task<IReadOnlyList<UserOrdersDTO>> GetUserOrders(Guid userId, int page)
     {
         var command = new GetUserOrdersPagedListQuery(userId, page);
-        return await _mediator.Send(command);
+        var result = await _mediator.Send(command);
+        return result.Items;
 
     }
 

@@ -15,10 +15,11 @@ namespace BookManagementSystem.API.Controllers
         }
 
         [HttpGet("getBookOrders{bookId}/{page}")]
-        public async Task<PagedListDTO<BookOrderDTO>> GetBookOrders(Guid bookId, int page = 1)
+        public async Task<IReadOnlyList<BookOrderDTO>> GetBookOrders(Guid bookId, int page = 1)
         {
             var command = new GetBookOrdersPagedListQuery(bookId, page);
-            return await _mediator.Send(command);
+            var result = await _mediator.Send(command);
+            return result.Items;
         }
     }
 }

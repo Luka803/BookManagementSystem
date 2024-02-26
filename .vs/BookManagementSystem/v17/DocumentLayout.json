@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{25691F5E-C044-41D9-AE74-4E9FECFAA22B}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25691F5E-C044-41D9-AE74-4E9FECFAA22B}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\services\\authorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\pages\\home.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Pages\\Home.razor",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Home.razor",
+              "RelativeToolTip": "BookManagementSystem.UI\\Pages\\Home.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-02-26T21:08:43.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthorService.cs",
-              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Services\\AuthorService.cs",
-              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Services\\AuthorService.cs",
-              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Services\\AuthorService.cs",
-              "RelativeToolTip": "BookManagementSystem.UI\\Services\\AuthorService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Title": "Home.razor.cs",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Home.razor.cs",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Pages\\Home.razor.cs",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Home.razor.cs",
+              "RelativeToolTip": "BookManagementSystem.UI\\Pages\\Home.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T15:30:20.84Z",
+              "WhenOpened": "2024-02-26T21:08:41.187Z",
               "EditorCaption": ""
             }
           ]

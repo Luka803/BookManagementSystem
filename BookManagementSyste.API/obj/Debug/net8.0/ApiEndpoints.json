@@ -44,7 +44,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetSingleAuthor",
-    "RelativePath": "api/author/get{authorId}",
+    "RelativePath": "api/author/get/{authorId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -69,28 +69,8 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
-    "Method": "GetAuthorsDropdown",
-    "RelativePath": "api/author/getAuthorsDropdown",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthors.AuthorDropdownDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsPagedList",
-    "RelativePath": "api/author/getAuthorsPagedList{page}",
+    "RelativePath": "api/author/getAuthors/{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -103,7 +83,27 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthors.AuthorPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthors.AuthorPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
+    "Method": "GetAuthorsDropdown",
+    "RelativePath": "api/author/getAuthorsDropdown",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthors.AuthorDropdownDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -194,7 +194,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "GetAuthorBooks",
-    "RelativePath": "api/book/getAuthorBooksPagedList{authorId}/{page}",
+    "RelativePath": "api/book/getAuthorBooks{authorId}/{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -212,7 +212,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList.AuthorBooksDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthorBooksPagedList.AuthorBooksDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -245,7 +245,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "GetBooksWithDetailsPagedList",
-    "RelativePath": "api/book/getBooksWithDetilsPagedList{page}",
+    "RelativePath": "api/book/getBooksWithDetils{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -258,7 +258,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList.BookPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.Book.Queries.GetBooksPagedList.BookPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -375,7 +375,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.OrderController",
     "Method": "GetUserOrders",
-    "RelativePath": "api/order/getUserOrders{userId}/{page}",
+    "RelativePath": "api/order/getUser{userId}/{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -393,7 +393,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Order.Queries.GetUserOrdersPagedList.UserOrdersDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.Order.Queries.GetUserOrdersPagedList.UserOrdersDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -476,7 +476,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders.BookOrderDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.OrderItem.Queries.GetBookOrders.BookOrderDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -515,7 +515,7 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.ReviewController",
     "Method": "GetBookReviewsPagedList",
-    "RelativePath": "api/review/getBookReviewsPagedList{bookId}/{page}",
+    "RelativePath": "api/review/getBookReviews{bookId}/{page}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -533,7 +533,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "BookManagementSystem.Application.Models.PagedListDTO\u00601[[BookManagementSystem.Application.Features.Review.Queries.GetBookReviewsPagedList.BookReviewsPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IReadOnlyList\u00601[[BookManagementSystem.Application.Features.Review.Queries.GetBookReviewsPagedList.BookReviewsPagedListDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
