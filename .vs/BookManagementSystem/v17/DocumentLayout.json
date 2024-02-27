@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\luka\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|C:\\Users\\Luka\\Desktop\\BookManagementSystem\\bookmanagementsystem.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\pages\\author\\authorindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\pages\\author\\authorindex.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +27,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Layout\\NavMenu.razor*",
-              "RelativeToolTip": "BookManagementSystem.UI\\Layout\\NavMenu.razor*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAGAAAA",
+              "Title": "AuthorIndex.razor",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Author\\AuthorIndex.razor",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\Pages\\Author\\AuthorIndex.razor",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\Pages\\Author\\AuthorIndex.razor",
+              "RelativeToolTip": "BookManagementSystem.UI\\Pages\\Author\\AuthorIndex.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-27T17:37:56.391Z",
+              "WhenOpened": "2024-02-27T19:55:42.18Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "BookManagementSystem.UI\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\index.html",
-              "RelativeToolTip": "BookManagementSystem.UI\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-02-27T17:37:25.365Z"
             }
           ]
         },

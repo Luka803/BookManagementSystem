@@ -13,39 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = BookManagementSystem.UI
 build_property.RootNamespace = BookManagementSystem.UI
-build_property.ProjectDir = C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.UI\
+build_property.ProjectDir = C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Luka\Desktop\BookManagementSystem\BookManagementSystem.UI
+build_property.MSBuildProjectDirectory = C:\Users\lukak\OneDrive\Desktop\BookManagementSystem\BookManagementSystem.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/App.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Author/AuthorDetails.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Author/AuthorDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yXEF1dGhvckRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Author/AuthorIndex.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Author/AuthorIndex.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yXEF1dGhvckluZGV4LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Home.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/_Imports.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/Layout/MainLayout.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-a4b1jb3s8w
 
-[C:/Users/Luka/Desktop/BookManagementSystem/BookManagementSystem.UI/Layout/NavMenu.razor]
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-mixh93jq8q

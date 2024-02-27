@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
+    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "projectName": "BookManagementSystem.Domain",
-        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
+        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

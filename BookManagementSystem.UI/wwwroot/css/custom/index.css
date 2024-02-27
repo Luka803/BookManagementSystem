@@ -1,0 +1,43 @@
+﻿*,
+*::after,
+*::before {
+    box-sizing: border-box !important;
+    margin: 0;
+    padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    width: 200px;
+    padding: 10px;
+    background-color: var(--main-color);
+    font-family: inherit;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 18px;
+}
+
+    button:hover {
+        background-color: #3a6eb6;
+        cursor: pointer;
+    }
+
+ul {
+    max-width: 1100px;
+}
+
+h1 {
+    color: var(--color-gray)
+}

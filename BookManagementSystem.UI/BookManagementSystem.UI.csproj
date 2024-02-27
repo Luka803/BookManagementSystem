@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\css\customCss\**" />
+    <Content Remove="wwwroot\css\customCss\**" />
+    <EmbeddedResource Remove="wwwroot\css\customCss\**" />
+    <None Remove="wwwroot\css\customCss\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.2" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
@@ -14,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Components\" />
-    <Folder Include="wwwroot\css\customCss\" />
   </ItemGroup>
 
 </Project>
