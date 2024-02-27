@@ -1,0 +1,42 @@
+﻿@using BookManagementSystem.UI.Services.Base
+@using BookManagementSystem.UI.UnitOfWork
+
+@page "/authors"
+@inject IUnitOfWork unitOfWork;
+@inject NavigationManager navigationManager;
+
+<PageTitle>Authors</PageTitle>
+
+@if (Authors == null)
+{
+    <p>loading...</p>
+}
+else
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Birth year</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Authors)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.AuthorName</td>
+                    <td>@item.BirthYear</td>
+                    <td><button @onclick="() => Details(item.Id)">Details</button></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p class="">@TotalPages</p>
+    <button @onclick="RefreshData">Refresh data</button>
+
+}
+
+

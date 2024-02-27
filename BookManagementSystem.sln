@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagementSystem.API", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagementSystem.Infrastructure", "BookManagementSystem.Infrastructure\BookManagementSystem.Infrastructure.csproj", "{B2926603-5FDC-4E37-B208-A1C878FFF6A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookManagementSystem.UI", "BookManagementSystem.UI\BookManagementSystem.UI.csproj", "{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookManagementSystem.UI", "BookManagementSystem.UI\BookManagementSystem.UI.csproj", "{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

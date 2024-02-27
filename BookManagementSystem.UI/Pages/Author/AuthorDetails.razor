@@ -1,0 +1,18 @@
+﻿@using BookManagementSystem.UI.UnitOfWork
+@using BookManagementSystem.UI.Services.Base;
+
+@page "/author/{authorId:guid}"
+@inject IUnitOfWork unitOfWork;
+
+<h3>AuthoDetails</h3>
+
+@if (AuthorDetailsDTO != null)
+{
+    <p>@AuthorDetailsDTO!.AuthorName</p>
+
+}
+
+
+
+
+

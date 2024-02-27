@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {}
+    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
+    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
         "projectName": "BookManagementSystem.Application",
-        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
-        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\obj\\",
+        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj",
+        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
-                "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
+              "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj"
               }
             }
           }
@@ -98,17 +102,21 @@
         }
       }
     },
-    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
+    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
         "projectName": "BookManagementSystem.Domain",
-        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
-        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\BookManagementSystem.Domain.csproj",
+        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -158,17 +166,21 @@
         }
       }
     },
-    "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
+    "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
         "projectName": "BookManagementSystem.Persistence",
-        "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
-        "packagesPath": "C:\\Users\\lukak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\obj\\",
+        "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\BookManagementSystem.Persistence.csproj",
+        "packagesPath": "C:\\Users\\Luka\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Persistence\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lukak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Luka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,8 +194,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
-                "projectPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj"
+              "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj": {
+                "projectPath": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.Application\\BookManagementSystem.Application.csproj"
               }
             }
           }

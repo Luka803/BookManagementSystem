@@ -9,10 +9,19 @@ public class AuthorService : BaseHttpService, IAuthorService
     {
     }
 
-    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthors()
+    public async Task<AuthorDetailsDTO> GetAuthor(Guid id)
     {
-        var authors = await _client.GetAuthorsAsync(1);
+        return await _client.GetAsync(id);
+    }
+
+    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthors(int page)
+    {
+        var authors = await _client.GetAuthorsAsync(page);
         return authors.ToList();
     }
 
+    public async Task<int> GetAuthorTotalPages()
+    {
+        return await _client.GetAuthorTotalPagesAsync();
+    }
 }

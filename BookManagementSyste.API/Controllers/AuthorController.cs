@@ -26,6 +26,20 @@ public partial class AuthorController : BaseController
         return await _mediator.Send(new GetAuthorsDropdownQuery());
     }
 
+    [HttpGet("getTotalAuthorsItems")]
+    public async Task<int> GetTotalAuthors()
+    {
+        var authors = await _mediator.Send(new GetAuthorsDropdownQuery());
+        return authors.Count();
+    }
+
+    [HttpGet("getAuthorTotalPages")]
+    public async Task<int> GetAuthorsTotalPages()
+    {
+        var authors = await _mediator.Send(new GetAuthorsPagedListQuery());
+        return authors.TotalPages;
+    }
+
     [HttpGet("getAuthors/{page}")]
     public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
     {

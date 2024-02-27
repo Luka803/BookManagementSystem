@@ -1,34 +1,8 @@
 ﻿@page "/"
-@using BookManagementSystem.UI.UnitOfWork
-@inject IUIUnitOfWork unitOfWork;
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
-
-@if (Authors == null)
-{
-    <p>loading...</p>
-}
-else
-{
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Author name</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Authors)
-            {
-                <tr>
-                    <td>@item.AuthorName</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
-}
 
 
 

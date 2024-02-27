@@ -5,5 +5,8 @@ namespace BookManagementSystem.UI.Contracts;
 
 public interface IAuthorService
 {
-    public Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthors();
+    public Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthors(int page);
+    public Task<int> GetAuthorTotalPages();
+
+    public Task<AuthorDetailsDTO> GetAuthor(Guid id);
 }
