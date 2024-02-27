@@ -1,4 +1,5 @@
 using BookManagementSystem.UI.Services.Base;
+using Microsoft.AspNetCore.Components;
 
 namespace BookManagementSystem.UI.Pages.Author
 {
@@ -14,9 +15,10 @@ namespace BookManagementSystem.UI.Pages.Author
             TotalPages = await unitOfWork.Author.GetAuthorTotalPages();
         }
 
-        private async Task RefreshData(Microsoft.AspNetCore.Components.Web.MouseEventArgs e)
+        private async Task RefreshData()
         {
-            Authors = await unitOfWork.Author.GetAuthors(1);
+            Authors = await unitOfWork.Author.GetAuthors(3);
+            StateHasChanged();
         }
 
         private void Details(Guid authorId)

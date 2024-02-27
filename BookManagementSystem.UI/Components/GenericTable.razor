@@ -1,0 +1,28 @@
+﻿@using BookManagementSystem.UI.Models.Base
+@typeparam TItem
+
+@inject NavigationManager navigationManager;
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            @foreach (var property in typeof(TItem).GetProperties())
+            {
+                <th>@property.Name</th>
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Items)
+        {
+            <tr>
+                @foreach (var property in typeof(TItem).GetProperties())
+                {
+                    <td>@property.GetValue(item)</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+

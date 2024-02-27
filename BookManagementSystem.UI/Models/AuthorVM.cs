@@ -1,14 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using BookManagementSystem.UI.Models.Base;
 
 namespace BookManagementSystem.UI.Models
 {
-    public class AuthorVM : BaseVM
+    public class AuthorPagedListVM : BaseVM, IBaseTableModel
     {
-        [Required]
         public string AuthorName { get; set; } = null!;
         public string Biography { get; set; } = string.Empty;
-
-        [Required]
         public int BirthYear { get; set; }
     }
 }

@@ -26,6 +26,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/Button.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/GenericTable.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xHZW5lcmljVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Author/AuthorDetails.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aG9yXEF1dGhvckRldGFpbHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
