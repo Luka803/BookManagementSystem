@@ -25,26 +25,6 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\customCss\\footer.css",
-      "PackagePath": "staticwebassets\\css\\customCss\\footer.css"
-    },
-    {
-      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\customCss\\forms.css",
-      "PackagePath": "staticwebassets\\css\\customCss\\forms.css"
-    },
-    {
-      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\customCss\\index.css",
-      "PackagePath": "staticwebassets\\css\\customCss\\index.css"
-    },
-    {
-      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\customCss\\main.css",
-      "PackagePath": "staticwebassets\\css\\customCss\\main.css"
-    },
-    {
-      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\customCss\\nav.css",
-      "PackagePath": "staticwebassets\\css\\customCss\\nav.css"
-    },
-    {
       "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
