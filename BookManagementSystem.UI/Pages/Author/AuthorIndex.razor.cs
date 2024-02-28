@@ -11,7 +11,11 @@ public partial class AuthorIndex
 
     protected override async Task OnInitializedAsync()
     {
+        await LoadData();
+    }
 
+    private async Task LoadData()
+    {
         Authors = await unitOfWork.Author.GetAuthors(Page);
         TotalPages = await unitOfWork.Author.GetAuthorTotalPages();
     }
