@@ -60,7 +60,7 @@ else
                     <p class="details-form-under-label">Modified date</p>
                     <p class="details-form-under-data">@AuthorDetailsVM.GetFormattedModifiedDate()</p>
                 </div>
-                <Button Text="Refresh data" OnClick="@LoadAuthor" />
+                <Button Text="Refresh data" OnClick="@LoadAuthor" CssRule="btn-main" />
             </div>
 
         </div>
@@ -74,8 +74,8 @@ else
             {
                 <h3>Author books</h3>
                 <Table TItem=AuthorBookVM Routes=Routes Items=AuthorBooks />
-
             }
+            <Button Text="Add book for author" CssRule="btn-main" OnClick="AddBook" />
         </div>
     </div>
 }

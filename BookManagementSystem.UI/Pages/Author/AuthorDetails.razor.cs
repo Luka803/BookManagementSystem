@@ -40,4 +40,9 @@ public partial class AuthorDetails
         await unitOfWork.Author.DeleteAuthor(authorId);
         navigationManager.NavigateTo($"/authors");
     }
+
+    private void AddBook()
+    {
+
+    }
 }

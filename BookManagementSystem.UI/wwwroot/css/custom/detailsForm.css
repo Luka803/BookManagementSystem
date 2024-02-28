@@ -77,9 +77,11 @@
 .edit-form-group {
     display: flex;
     flex-direction: column;
-
 }
 
-.edit-form-label{
+.edit-form-label {
     font-weight: bolder;
+}
+.edit-form-input{
+    background: black !important;
 }
