@@ -34,6 +34,27 @@ h5 {
         cursor: pointer;
     }
 
+
+.btn-max {
+    display: flex;
+    column-gap: 10px;
+    background-color: #eeeeee;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-inline: 10px;
+}
+
+    .btn-max:hover {
+        color: #3a6eb6;
+    }
+
+.accordion-arrows {
+    display: flex;
+    flex-direction: column;
+}
+
+
 ul {
     max-width: 1100px;
 }

@@ -1,6 +1,6 @@
 ﻿
 
-<button class="btn-main" @onclick="OnClick">
+<button class="@CssRule" @onclick="OnClick">
     @Text
 </button>
 
@@ -11,4 +11,6 @@
 
     [Parameter]
     public EventCallback OnClick { get; set; }
+    [Parameter]
+    public string CssRule { get; set; } = null!;
 }

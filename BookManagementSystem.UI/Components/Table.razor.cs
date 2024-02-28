@@ -17,12 +17,6 @@ public partial class Table<TItem>
         var itemId = GetItemId(item);
         navigationManager.NavigateTo($"/{Routes![0]}/{itemId}");
     }
-
-    private void Delete(TItem item)
-    {
-        var itemId = GetItemId(item);
-    }
-
     private void Edit(TItem item)
     {
         var itemId = GetItemId(item);

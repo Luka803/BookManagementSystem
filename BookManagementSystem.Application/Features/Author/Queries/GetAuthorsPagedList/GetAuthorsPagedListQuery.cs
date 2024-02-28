@@ -4,4 +4,11 @@ using MediatR;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 
-public record GetAuthorsPagedListQuery(int page = 1) : IRequest<PagedListDTO<AuthorPagedListDTO>>;
+public class GetAuthorsPagedListQuery : IRequest<PagedListDTO<AuthorPagedListDTO>>
+{
+    public int Page { get; set; }
+    public string? AuthorName { get; set; }
+    public int? StartBirthYear { get; set; }
+    public int? EndBirthYear { get; set; }
+
+}

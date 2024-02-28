@@ -40,11 +40,17 @@ public partial class AuthorController : BaseController
         return authors.TotalPages;
     }
 
-    [HttpGet("getAuthors/{page}")]
-    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthorsPagedList(int page = 1)
+    [HttpGet("getAuthorTotalItems")]
+    public async Task<int> GetAuthorTotalItems()
     {
-        var command = new GetAuthorsPagedListQuery(page);
-        var result = await _mediator.Send(command);
+        var authors = await _mediator.Send(new GetAuthorsPagedListQuery());
+        return authors.TotalItems;
+    }
+
+    [HttpPost("getAuthors")]
+    public async Task<IReadOnlyList<AuthorPagedListDTO>> GetAuthorsPagedList(GetAuthorsPagedListQuery query)
+    {
+        var result = await _mediator.Send(query);
         return result.Items;
     }
 

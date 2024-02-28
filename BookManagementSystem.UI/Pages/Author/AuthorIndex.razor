@@ -16,12 +16,63 @@
 }
 else
 {
-
     <h1>Authors</h1>
     <hr />
-    <p class="">@TotalPages</p>
+    <button class="btn-max" @onclick="ToggleNavMenu">
+        <div class="accordion-arrows">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
+                <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+            </svg>
+        </div>
+        Search
+    </button>
+    <div class="@NavMenuCssClass">
+        <EditForm Model="@Author" OnSubmit="() => RefreshData(Author.Page)" class="edit-form">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="edit-form-group">
+                <label class="edit-form-label" for="name">Author name</label>
+                <InputText class="edit-form-input" id="name" @bind-Value="@Author.AuthorName" />
+            </div>
+            <div class="edit-form-group">
+                <label class="edit-form-label" for="birthYear">Start birth year</label>
+                <InputNumber class="edit-form-input" id="birthYear" @bind-Value="@Author.StartBirthYear" />
+            </div>
+            <div class="edit-form-group">
+                <label class="edit-form-label" for="biography">End birth year</label>
+                <InputNumber class="edit-form-input" id="biography" @bind-Value="@Author.EndBirthYear" />
+            </div>
+            <button style="display: none" type="submit"></button>
+        </EditForm>
+    </div>
+
+    <Button OnClick="()=>RefreshData(1)" Text="Refresh data" CssRule="btn-max" />
+    <Button OnClick="@AddAuthor" Text="New author" CssRule="btn-main" />
+
+    <p class="total-count">Total count: <strong>@TotalItems</strong></p>
     <Table Items=Authors TItem=AuthorPagedListVM Routes=Routes />
-    <Button OnClick="@RefreshData" Text="Refresh data" />
+
+    <div class="pagination">
+
+        <a @onclick="()=>RefreshData(1)">First</a>
+
+        @if (Author!.Page > 1)
+        {
+            <a @onclick="()=>RefreshData(Author.Page-1)">Previous</a>
+        }
+        <p>@Author.Page of @TotalPages</p>
+
+        @if (Author.Page < TotalPages)
+        {
+            <a @onclick="()=>RefreshData(Author.Page+1)">Next</a>
+        }
+        <a @onclick="()=>RefreshData(TotalPages)">Last</a>
+    </div>
+
+
 
 }
 

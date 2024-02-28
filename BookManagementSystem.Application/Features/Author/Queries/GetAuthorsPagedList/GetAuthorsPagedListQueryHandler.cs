@@ -4,6 +4,7 @@ using BookManagementSystem.Application.Features.Author.Queries.GetAuthors;
 using BookManagementSystem.Application.Features.Base;
 using BookManagementSystem.Application.Models;
 using BookManagementSystem.Application.UnitOfWork;
+using BookManagementSystem.Domain.Base;
 
 namespace BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList;
 
@@ -17,7 +18,7 @@ public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPage
     {
         var pagedList = new PagedList<AuthorPagedListDTO>(new MyDomain.Author());
 
-        pagedList.PageNumber = request.page;
+        pagedList.PageNumber = request.Page;
 
         pagedList.DbItems = await _cache.AuthorCacheService.GetOrSet(
             "GetAuthors",
@@ -26,6 +27,7 @@ public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPage
             );
 
         pagedList.Items = _mapper.Map<IReadOnlyList<AuthorPagedListDTO>>(pagedList.DbItemsFiltered);
+        pagedList.Items = FilterPageList(pagedList.Items, request);
 
         return new PagedListDTO<AuthorPagedListDTO>
         {
@@ -35,5 +37,24 @@ public class GetAuthorsPagedListQueryHandler : BaseRequestHandler<GetAuthorsPage
             TotalPages = pagedList.TotalPages
 
         };
+    }
+
+    private IReadOnlyList<AuthorPagedListDTO> FilterPageList(IReadOnlyList<AuthorPagedListDTO> items, GetAuthorsPagedListQuery request)
+    {
+        if (request.StartBirthYear != null && request.StartBirthYear > 0)
+        {
+            items = items.Where(x => x.BirthYear >= request.StartBirthYear).ToList();
+        }
+
+        if (request.EndBirthYear != null && request.EndBirthYear > 0)
+        {
+            items = items.Where(x => x.BirthYear <= request.EndBirthYear).ToList();
+        }
+
+        if (request.AuthorName != null)
+        {
+            items = items.Where(x => x.AuthorName.ToLower().Contains(request.AuthorName.ToLower())).ToList();
+        }
+        return items;
     }
 }

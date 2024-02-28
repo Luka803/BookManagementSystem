@@ -33,9 +33,10 @@ public class AuthorService : BaseHttpService, IAuthorService
         return _mapper.Map<IReadOnlyList<AuthorBookVM>>(authorBooks);
     }
 
-    public async Task<IReadOnlyList<AuthorPagedListVM>> GetAuthors(int page)
+    public async Task<IReadOnlyList<AuthorPagedListVM>> GetAuthors(AuthorIndexVM author)
     {
-        var authors = await _client.GetAuthorsAsync(page);
+        var authorToSend = _mapper.Map<GetAuthorsPagedListQuery>(author);
+        var authors = await _client.GetAuthorsAsync(authorToSend);
         return _mapper.Map<IReadOnlyList<AuthorPagedListVM>>(authors);
     }
 
@@ -54,5 +55,17 @@ public class AuthorService : BaseHttpService, IAuthorService
     {
         var authorToAdd = _mapper.Map<UpdateAuthorCommand>(author);
         return await _client.UpdateAuthorAsync(authorToAdd);
+    }
+
+    public async Task<Guid> AddAuthor(AddAuthorVM author)
+    {
+        var authorToAdd = _mapper.Map<AddAuthorCommand>(author);
+        var result = await _client.AddAuthorAsync(authorToAdd);
+        return result;
+    }
+
+    public async Task<int> GetAuthorTotalItems()
+    {
+        return await _client.GetAuthorTotalItemsAsync();
     }
 }

@@ -113,3 +113,45 @@ a, .btn-link {
 code {
     color: #c02d76;
 }
+
+.total-count {
+    width: 100%;
+    padding: 10px 5px !important;
+    margin-bottom: 20px !important;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+.pagination {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 20px;
+    gap: 50px;
+    background-color: #eeeeee;
+}
+
+.update-button {
+    margin-bottom: 20px
+}
+
+    .pagination a, .update-button a {
+        text-decoration: none;
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        width: 100px;
+        padding: 10px;
+        background-color: #224a74;
+        font-family: inherit;
+        color: white !important;
+        cursor: pointer;
+        border-radius: 5px;
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+
+        .pagination a:hover, .update-button a:hover {
+            background-color: #3a6eb6;
+        }

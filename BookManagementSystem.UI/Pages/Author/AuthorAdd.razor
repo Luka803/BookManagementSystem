@@ -1,0 +1,27 @@
+﻿@using BookManagementSystem.UI.UnitOfWork
+@page "/author"
+@inject IUnitOfWork unitOfWork;
+@inject NavigationManager navigationManager;
+
+<PageTitle>Author edit</PageTitle>
+<h3>Edit author</h3>
+<hr />
+
+<EditForm Model="@Author" OnValidSubmit="HandleSubmit" class="edit-form">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="edit-form-group">
+        <label class="edit-form-label" for="name">Author name</label>
+        <InputText class="edit-form-input" id="name" @bind-Value="@Author!.AuthorName" />
+    </div>
+    <div class="edit-form-group">
+        <label class="edit-form-label" for="birthYear">Birth year</label>
+        <InputNumber class="edit-form-input" id="birthYear" @bind-Value="@Author.BirthYear" />
+    </div>
+    <div class="edit-form-group">
+        <label class="edit-form-label" for="biography">Biography</label>
+        <InputTextArea class="edit-form-input" id="biography" @bind-Value="@Author.Biography" />
+    </div>
+    <button class="btn-main" type="submit">Submit</button>
+</EditForm>
+

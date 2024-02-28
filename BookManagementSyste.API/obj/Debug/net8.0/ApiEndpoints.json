@@ -70,14 +70,14 @@
   {
     "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
     "Method": "GetAuthorsPagedList",
-    "RelativePath": "api/author/getAuthors/{page}",
-    "HttpMethod": "GET",
+    "RelativePath": "api/author/getAuthors",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "page",
-        "Type": "System.Int32",
+        "Name": "query",
+        "Type": "BookManagementSystem.Application.Features.Author.Queries.GetAuthorsPagedList.GetAuthorsPagedListQuery",
         "IsRequired": true
       }
     ],
@@ -104,6 +104,26 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[BookManagementSystem.Application.Features.Author.Queries.GetAuthors.AuthorDropdownDTO, BookManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.AuthorController",
+    "Method": "GetAuthorTotalItems",
+    "RelativePath": "api/author/getAuthorTotalItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
         "MediaTypes": [
           "text/plain",
           "application/json",
