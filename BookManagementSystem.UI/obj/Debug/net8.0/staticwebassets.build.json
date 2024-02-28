@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "puo/+/Jgco4Ym36QpdtlmjM1Pc0RDlfx1hPx0yshId8=",
+  "Hash": "sZIatpvhvZcUIvqdq0xdH28Y18OfiUOxrwqEllp0ByM=",
   "Source": "BookManagementSystem.UI",
   "BasePath": "/",
   "Mode": "Root",
@@ -8054,6 +8054,25 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Identity": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+      "SourceId": "BookManagementSystem.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/custom/detailsForm.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom\\detailsForm.css"
+    },
+    {
       "Identity": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
       "SourceId": "BookManagementSystem.UI",
       "SourceType": "Discovered",
@@ -8071,6 +8090,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\custom\\index.css"
+    },
+    {
+      "Identity": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+      "SourceId": "BookManagementSystem.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/custom/table.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\custom\\table.css"
     },
     {
       "Identity": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\favicon.png",

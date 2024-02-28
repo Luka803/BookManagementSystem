@@ -1,16 +1,50 @@
-﻿@using BookManagementSystem.UI.UnitOfWork
+﻿@using BookManagementSystem.UI.Models
+@using BookManagementSystem.UI.UnitOfWork
 @using BookManagementSystem.UI.Services.Base;
+@using BookManagementSystem.UI.Components;
 
-@page "/author/{authorId:guid}"
+@page "/authordetails/{authorId:guid}"
 @inject IUnitOfWork unitOfWork;
 
-<h3>AuthoDetails</h3>
+<PageTitle>Author's details</PageTitle>
+<h3 class="page-title">Detailed view of author</h3>
+<hr />
 
-@if (AuthorDetailsDTO != null)
+@if (AuthorDetailsDTO == null)
 {
-    <p>@AuthorDetailsDTO!.AuthorName</p>
-
+    <p>Loading...</p>
+    return;
 }
+else
+{
+    <div class="details-container d-flex flex-row justify-content-evenly">
+        <div class="details-form">
+            <div class="details-form-upper">
+                <h4>@AuthorDetailsDTO.AuthorName</h4>
+                <p>#@AuthorDetailsDTO.Id</p>
+            </div>
+            <hr />
+            <div class="details-form-under">
+
+            </div>
+        </div>
+        <div class="details-child-elements flex-grow-1">
+            @if (ErrorResponse != null)
+            {
+                <p>@ErrorResponse</p>
+            }
+            else
+            {
+                <h3>Author books</h3>
+                <Table TItem=AuthorBookVM Routes=Routes Items=AuthorBooks />
+            }
+        </div>
+    </div>
+}
+
+
+
+
 
 
 

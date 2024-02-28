@@ -1,12 +1,16 @@
-﻿namespace BookManagementSystem.UI.Services.Base;
+﻿using AutoMapper;
+
+namespace BookManagementSystem.UI.Services.Base;
 
 public class BaseHttpService
 {
     protected IClient _client;
+    protected IMapper _mapper;
 
-    public BaseHttpService(IClient client)
+    public BaseHttpService(IClient client, IMapper mapper)
     {
         this._client = client;
+        this._mapper = mapper;
     }
 
     protected Response<Guid> ConvertApiExceptions<Guid>(ApiException ex)

@@ -1,0 +1,43 @@
+﻿@using BookManagementSystem.UI.Models.Base
+
+@typeparam TItem
+
+@inject NavigationManager navigationManager;
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            @foreach (var property in typeof(TItem).GetProperties())
+            {
+                if (property.Name != "ID")
+                {
+                    <th>@GetDisplayName(property)</th>
+                }
+            }
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Items)
+        {
+            <tr>
+                @foreach (var property in typeof(TItem).GetProperties())
+                {
+                    if (property.Name != "ID")
+                    {
+                        <td>@property.GetValue(item)</td>
+                    }
+                }
+                <td>
+                    <div class="d-flex justify-content-between table-actions">
+                        <a class="table-link" @onclick="()=>Details(item)">Details</a>
+                        <a class="table-link" @onclick="()=>Edit(item)">Edit</a>
+                        <a class="table-link" @onclick="()=>Delete(item)">Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

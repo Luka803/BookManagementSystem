@@ -1,0 +1,15 @@
+﻿
+.details-container {
+    gap: 150px;
+}
+
+.details-form {
+    background-color: #f4f7fc;
+    width: 750px;
+    border-radius: 10px;
+}
+
+.details-form-upper {
+    text-align: center;
+    margin-top: 20px;
+}

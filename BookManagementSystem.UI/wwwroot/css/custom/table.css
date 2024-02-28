@@ -1,0 +1,9 @@
+﻿.table-link {
+    cursor: pointer;
+    padding-inline: 5px;
+}
+
+    .table-link:hover {
+        background: white;
+        border-radius: 10px;
+    }

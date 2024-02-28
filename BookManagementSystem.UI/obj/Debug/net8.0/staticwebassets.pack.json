@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+      "PackagePath": "staticwebassets\\css\\custom\\detailsForm.css"
+    },
+    {
       "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
       "PackagePath": "staticwebassets\\css\\custom\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+      "PackagePath": "staticwebassets\\css\\custom\\table.css"
     },
     {
       "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\favicon.png",

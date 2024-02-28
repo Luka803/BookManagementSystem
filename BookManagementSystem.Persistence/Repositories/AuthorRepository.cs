@@ -30,6 +30,6 @@ public class AuthorRepository : GenericRepository<Author>, IAuthorRepository
         {
             return authorBooks.Books.ToList();
         }
-        throw new NotFoundException("There is no books for author with ID({0}}", id);
+        throw new NotFoundException("The books for author with", id);
     }
 }

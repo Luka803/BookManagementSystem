@@ -1,4 +1,5 @@
-﻿@using BookManagementSystem.UI.Services.Base;
+﻿@using BookManagementSystem.UI.Models
+@using BookManagementSystem.UI.Services.Base;
 @using BookManagementSystem.UI.UnitOfWork;
 @using BookManagementSystem.UI.Components;
 
@@ -10,46 +11,18 @@
 
 @if (Authors == null)
 {
-    <p>loading...</p>
+    <p>Loading...</p>
 }
 else
 {
 
     <h1>Authors</h1>
     <hr />
-
-    <table class="table table-striped table-bordered table-hover">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Birth year</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Authors)
-            {
-                <tr>
-                    <td>@item.Id</td>
-                    <td>@item.AuthorName</td>
-                    <td>@item.BirthYear</td>
-                    <td>
-                        <div>
-                            <a @onclick="() => Details(item.Id)">Details</a>
-                            <a @onclick="() => Details(item.Id)">Edit</a>
-                            <a @onclick="() => Details(item.Id)">Delete</a>
-                        </div>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-
     <p class="">@TotalPages</p>
-    <GenericTable Items="Authors" TItem="AuthorPagedListDTO" />
+    <Table Items=Authors TItem=AuthorPagedListVM Routes=Routes />
     <Button OnClick="@RefreshData" Text="Refresh data" />
 
 }
+
 
 
