@@ -1,51 +1,51 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\obj\\Debug\\net8.0\\compressed\\o4yz9d7sv3.gz",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\obj\\Debug\\net8.0\\compressed\\l6usy856uy.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookManagementSystem.UI.styles.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\BookManagementSystem.UI.styles.css",
       "PackagePath": "staticwebassets\\BookManagementSystem.UI.styles.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\app.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
       "PackagePath": "staticwebassets\\css\\custom\\detailsForm.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
       "PackagePath": "staticwebassets\\css\\custom\\index.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
       "PackagePath": "staticwebassets\\css\\custom\\table.css"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\icon-192.png",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Luka\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {

@@ -1,7 +1,7 @@
 ﻿using BookManagementSystem.UI.Models.Base;
 using System.ComponentModel.DataAnnotations;
 
-namespace BookManagementSystem.UI.Models;
+namespace BookManagementSystem.UI.Models.Author;
 
 public class AuthorPagedListVM : BaseVM
 {

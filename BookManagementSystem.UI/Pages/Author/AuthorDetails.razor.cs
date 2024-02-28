@@ -1,4 +1,4 @@
-using BookManagementSystem.UI.Models;
+using BookManagementSystem.UI.Models.Author;
 using BookManagementSystem.UI.Services.Base;
 using Microsoft.AspNetCore.Components;
 
@@ -9,7 +9,7 @@ public partial class AuthorDetails
 
     [Parameter]
     public Guid authorId { get; set; }
-    public AuthorDetailsDTO? AuthorDetailsDTO { get; set; }
+    public AuthorDetailsVM? AuthorDetailsVM { get; set; }
     public IReadOnlyList<AuthorBookVM>? AuthorBooks { get; set; }
     public string? ErrorResponse { get; set; }
     public string[] Routes => ["bookdetails, bookedit"];
@@ -27,6 +27,17 @@ public partial class AuthorDetails
         {
             ErrorResponse = "There are no books for this author";
         }
-        AuthorDetailsDTO = await unitOfWork.Author.GetAuthor(authorId);
+        AuthorDetailsVM = await unitOfWork.Author.GetAuthorDetails(authorId);
+    }
+
+    private void Edit(Guid authorId)
+    {
+        navigationManager.NavigateTo($"/authoredit/{authorId}");
+    }
+
+    private async void Delete(Guid authorId)
+    {
+        await unitOfWork.Author.DeleteAuthor(authorId);
+        navigationManager.NavigateTo($"/authors");
     }
 }

@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "BookManagementSystem.UI",
   "resources": {
-    "hash": "sha256-/vxV0ONj+lZlTdZTJ2hokqU+P4T5IiB72xT37VG8EIo=",
+    "hash": "sha256-A+Jg0EH3ioWGMMUWcMptnal9HwURGlkTwEAbSwBau14=",
     "jsModuleNative": {
-      "dotnet.native.8.0.2.efn1uqvxlm.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
+      "dotnet.native.8.0.2.eoswrtpaq6.js": "sha256-gPMK16QWoJSTxorlZJqcVtbBRTniIQWlLsJN2O4cJHg="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.2.jheq3k44nq.js": "sha256-54KSaoOArNfygQbV+r4B5y3ys53v2tnvFIyZcZiUmi0="
+      "dotnet.runtime.8.0.2.0itgvsbzay.js": "sha256-54KSaoOArNfygQbV+r4B5y3ys53v2tnvFIyZcZiUmi0="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-C2P+OTYZAJlmqo6rc4heqwvIVVsXIF8MAxC6WRe96Eg="
@@ -213,10 +213,10 @@
       "mscorlib.wasm": "sha256-OH3kXneWqQMz6CUSo6POZqIeMqn9+5RR+IgHn5TnIwA=",
       "netstandard.wasm": "sha256-ZOswxXEbR2TmqjpbaBEdgr85Bv1NC4GwOwoJ+oxXM3M=",
       "System.Private.CoreLib.wasm": "sha256-I2w0iHf5nvSQyF1YE1VbgdTzmmz6a4OE6J7vo5wFa/4=",
-      "BookManagementSystem.UI.wasm": "sha256-UQ3A/xf9adxA7gdUJ+Rg6tEsoruoXNbdJ9+oidNwpOE="
+      "BookManagementSystem.UI.wasm": "sha256-bz6zIEE71o8T8L2yWMvcFT5/zMme05byR7aocuHqL54="
     },
     "pdb": {
-      "BookManagementSystem.UI.pdb": "sha256-8+xLrzCYBSSM98Engz/jvJoaGDbpBpx/bQNmDume2mc="
+      "BookManagementSystem.UI.pdb": "sha256-GPoK0TzWLX9sdN5372/LtBaymSQ/Ry9oReOrqdik+Hc="
     }
   },
   "cacheBootResources": true,

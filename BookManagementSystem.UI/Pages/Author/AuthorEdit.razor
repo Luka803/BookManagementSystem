@@ -1,3 +1,34 @@
-﻿@page "/authoredit/{authorId:guid}"
+﻿@using BookManagementSystem.UI.UnitOfWork
+@page "/authoredit/{authorId:guid}"
+@inject IUnitOfWork unitOfWork;
+@inject NavigationManager navigationManager;
 
-<h3>Author edit</h3>
+<PageTitle>Author edit</PageTitle>
+<h3>Edit author</h3>
+<hr />
+
+@if (Author == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <EditForm Model="@Author" OnValidSubmit="HandleSubmit">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+        <div>
+            <label for="name">Author name</label>
+            <InputText id="name" @bind-Value="@Author.AuthorName" />
+        </div>
+        <div>
+            <label for="birthYear">Birth year</label>
+            <InputNumber id="birthYear" @bind-Value="@Author.BirthYear" />
+        </div>
+        <div>
+            <label for="biography">Biography</label>
+            <InputTextArea id="biography" @bind-Value="@Author.Biography" />
+        </div>
+        <button type="submit">Submit</button>
+    </EditForm>
+
+}

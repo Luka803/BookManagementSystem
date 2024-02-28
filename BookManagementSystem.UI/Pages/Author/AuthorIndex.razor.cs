@@ -1,4 +1,4 @@
-using BookManagementSystem.UI.Models;
+using BookManagementSystem.UI.Models.Author;
 
 namespace BookManagementSystem.UI.Pages.Author;
 
