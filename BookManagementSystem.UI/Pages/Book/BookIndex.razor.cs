@@ -31,7 +31,7 @@ namespace BookManagementSystem.UI.Pages.Book
 
         private void AddBook()
         {
-
+            navigationManager.NavigateTo("/bookadd");
         }
 
         private bool collapseNavMenu = true;

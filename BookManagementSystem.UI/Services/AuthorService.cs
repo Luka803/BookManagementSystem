@@ -68,4 +68,9 @@ public class AuthorService : BaseHttpService, IAuthorService
     {
         return await _client.GetAuthorTotalItemsAsync();
     }
+
+    public async Task<ICollection<AuthorDropdownDTO>> GetAuthorsDropdown()
+    {
+        return await _client.GetAuthorsDropdownAsync();
+    }
 }

@@ -24,6 +24,7 @@ public class VMMappingProfile : Profile
         #region Book
 
         CreateMap<BookPagedListDTO, BookPagedListVM>().ReverseMap();
+        CreateMap<BookAddVM, AddBookCommand>().ReverseMap();
 
         #endregion
 

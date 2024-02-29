@@ -1,0 +1,37 @@
+﻿@page "/bookadd"
+@using BookManagementSystem.UI.UnitOfWork
+
+@inject IUnitOfWork unitOfWork;
+@inject NavigationManager navigationManager;
+
+<EditForm Model=@Book OnSubmit=AddBook>
+
+    <div>
+        <label>Title</label>
+        <InputText @bind-Value=Book.Title />
+    </div>
+    <div>
+        <label>Price</label>
+        <InputNumber @bind-Value=Book.Price />
+    </div>
+    <div>
+        <label>ISBN</label>
+        <InputNumber @bind-Value=Book.ISBN />
+    </div>
+    <div>
+        <label>Author</label>
+        <InputSelect @bind-Value=Book.AuthorID>
+            @foreach (var item in Authors)
+            {
+                <option value="@item.Id">@item.AuthorName</option>
+            }
+        </InputSelect>
+    </div>
+
+    <div>
+        <label>Publication year</label>
+        <InputNumber @bind-Value=Book.PublicationYear />
+    </div>
+
+    <button type="submit" style="display: none"></button>
+</EditForm>
