@@ -57,7 +57,7 @@ public class AuthorService : BaseHttpService, IAuthorService
         return await _client.UpdateAuthorAsync(authorToAdd);
     }
 
-    public async Task<Guid> AddAuthor(AddAuthorVM author)
+    public async Task<Guid> AddAuthor(AuthorAddVM author)
     {
         var authorToAdd = _mapper.Map<AddAuthorCommand>(author);
         var result = await _client.AddAuthorAsync(authorToAdd);

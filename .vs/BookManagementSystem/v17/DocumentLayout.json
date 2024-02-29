@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\wwwroot\\css\\custom\\detailsform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\wwwroot\\css\\custom\\detailsform.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\wwwroot\\css\\custom\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\wwwroot\\css\\custom\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|c:\\users\\lukak\\onedrive\\desktop\\bookmanagementsystem\\bookmanagementsystem.ui\\wwwroot\\css\\custom\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{CB9A028B-E3B8-46F1-BFB7-ED1243890B47}|BookManagementSystem.UI\\BookManagementSystem.UI.csproj|solutionrelative:bookmanagementsystem.ui\\wwwroot\\css\\custom\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "detailsForm.css",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+              "RelativeToolTip": "BookManagementSystem.UI\\wwwroot\\css\\custom\\detailsForm.css",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAE0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-29T17:51:48.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
+              "RelativeToolTip": "BookManagementSystem.UI\\wwwroot\\css\\custom\\index.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-29T17:51:47.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "table.css",
+              "DocumentMoniker": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+              "RelativeDocumentMoniker": "BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+              "ToolTip": "C:\\Users\\lukak\\OneDrive\\Desktop\\BookManagementSystem\\BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+              "RelativeToolTip": "BookManagementSystem.UI\\wwwroot\\css\\custom\\table.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-02-29T17:51:46.575Z",
+              "EditorCaption": ""
             }
           ]
         },

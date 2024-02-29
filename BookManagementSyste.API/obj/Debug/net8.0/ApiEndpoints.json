@@ -330,6 +330,46 @@
   },
   {
     "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetBookTotalItems",
+    "RelativePath": "api/book/getBookTotalItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
+    "Method": "GetBookTotalPages",
+    "RelativePath": "api/book/getBookTotalPages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Int32",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BookManagementSystem.API.Controllers.BookController",
     "Method": "GetBookWithDetails",
     "RelativePath": "api/book/getBookWithDetails{bookId}",
     "HttpMethod": "GET",

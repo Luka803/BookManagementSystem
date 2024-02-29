@@ -36,6 +36,20 @@ public class BookController : BaseController
         return result.Items;
     }
 
+    [HttpGet("getBookTotalPages")]
+    public async Task<int> GetBookTotalPages()
+    {
+        var command = await _mediator.Send(new GetBooksPagedListQuery(1));
+        return command.TotalPages;
+    }
+
+    [HttpGet("getBookTotalItems")]
+    public async Task<int> GetBookTotalItems()
+    {
+        var command = await _mediator.Send(new GetBooksDropDownQuery());
+        return command.Count();
+    }
+
     [HttpGet("getBooksDropdown")]
     public async Task<List<BookDropDownDTO>> GetBooksDropdown()
     {

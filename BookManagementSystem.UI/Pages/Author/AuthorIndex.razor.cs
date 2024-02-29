@@ -10,12 +10,6 @@ public partial class AuthorIndex
     private int TotalItems { get; set; }
     public string[]? Routes => ["authordetails", "authoredit"];
 
-    private bool collapseNavMenu = true;
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 
     protected override async Task OnInitializedAsync()
     {
@@ -47,5 +41,14 @@ public partial class AuthorIndex
     {
         navigationManager.NavigateTo("/author");
     }
+
+    //Collapse
+    private bool collapseNavMenu = true;
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
 
 }

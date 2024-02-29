@@ -12,7 +12,7 @@ public interface IAuthorService
     public Task<AuthorDetailsVM> GetAuthorDetails(Guid id);
     public Task<AuthorEditVM> GetAuthorEdit(Guid id);
     public Task<IReadOnlyList<AuthorBookVM>> GetAuthorBooks(Guid authorId);
-    public Task<Guid> AddAuthor(AddAuthorVM author);
+    public Task<Guid> AddAuthor(AuthorAddVM author);
     public Task DeleteAuthor(Guid id);
     public Task<Guid> UpdateAuthor(AuthorEditVM author);
 }

@@ -22,4 +22,13 @@ public class UnitOfWork : IUnitOfWork
             return _Author ?? (_Author = new AuthorService(_client, _mapper));
         }
     }
+
+    protected IBookService? _Book;
+    public IBookService Book
+    {
+        get
+        {
+            return _Book ?? (_Book = new BookService(_client, _mapper));
+        }
+    }
 }

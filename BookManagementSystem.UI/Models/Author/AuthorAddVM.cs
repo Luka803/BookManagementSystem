@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BookManagementSystem.UI.Models.Author
 {
-    public class AddAuthorVM : BaseVM
+    public class AuthorAddVM : BaseVM
     {
         [Required]
         public string AuthorName { get; set; } = null!;

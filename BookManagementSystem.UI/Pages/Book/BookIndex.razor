@@ -1,14 +1,69 @@
 ﻿@using BookManagementSystem.UI.Models
+@using BookManagementSystem.UI.Models.Book
 @using BookManagementSystem.UI.Services.Base;
 @using BookManagementSystem.UI.UnitOfWork;
 @using BookManagementSystem.UI.Components;
-@using BookManagementSystem.UI.Models.Author;
 
 @page "/books"
 @inject IUnitOfWork unitOfWork;
 @inject NavigationManager navigationManager;
 
-
 <PageTitle>Books</PageTitle>
+
+<h1>Books</h1>
+<hr />
+
+<SearchBar Event="ToggleNavMenu" />
+
+@if (Books == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+
+    <div class="@NavMenuCssClass">
+        <EditForm Model="@Book" OnSubmit="() => RefreshData(Book.Page)" class="edit-form">
+            <DataAnnotationsValidator />
+            <ValidationSummary />
+            <div class="edit-form-group">
+                <label for="title" class="edit-form-label">Title</label>
+                <InputText @bind-Value="@Book.Title" id="title" class="edit-form-input" />
+            </div>
+            <div class="edit-form-group">
+                <label for="publicationYearStar" class="edit-form-label">Publication year from</label>
+                <InputNumber @bind-Value="@Book.PublicationYearStart" id="publicationYearStar" class="edit-form-input" />
+            </div>
+            <div class="edit-form-group">
+                <label for="publicationYearEnd" class="edit-form-label">Publication year to</label>
+                <InputNumber @bind-Value="@Book.PublicationYearEnd" id="publicationYearEnd" class="edit-form-input" />
+            </div>
+            <div class="edit-form-group">
+                <label for="authorName" class="edit-form-label">Author name</label>
+                <InputText @bind-Value="@Book.AuthorName" id="authorName" class="edit-form-input" />
+            </div>
+            <div class="edit-form-group">
+                <label for="priceStart" class="edit-form-label">Price from</label>
+                <InputNumber @bind-Value="@Book.PriceStart" id="priceStart" class="edit-form-input" />
+            </div>
+            <div class="edit-form-group">
+                <label for="priceEnd" class="edit-form-label">Price to</label>
+                <InputNumber @bind-Value="@Book.PriceEnd" id="priceEnd" class="edit-form-input" />
+            </div>
+        </EditForm>
+    </div>
+
+
+
+    <Button OnClick="()=>RefreshData(1)" Text="Refresh data" CssRule="btn-max" />
+    <Button OnClick="@AddBook" Text="New book" CssRule="btn-main" />
+    <TotalCount TotalItems=@TotalItems />
+
+    <Table Items=Books TItem=BookPagedListVM Routes=Routes />
+    <Pagination CurrentPage=@Book.Page OnPageChanged=RefreshData TotalPages=@TotalPages />
+}
+
+
+
 
 
