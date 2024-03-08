@@ -8,4 +8,6 @@ public interface IBookService
     Task<int> GetBookTotalItems();
     Task<int> GetBookTotalPages();
     Task<Guid> AddBook(BookAddVM book);
+    Task<BookDetailsVM> GetBookWithDetails(Guid id);
+    Task DeleteBook(Guid id);
 }

@@ -17,6 +17,15 @@ public class BookService : BaseHttpService, IBookService
         return await _client.AddBookAsync(bookToAdd);
     }
 
+    public async Task DeleteBook(Guid id)
+    {
+        var command = new DeleteBookCommand()
+        {
+            Id = id
+        };
+        await _client.DeleteBookAsync(command);
+    }
+
     public async Task<IReadOnlyList<BookPagedListVM>> GetBooks(BookIndexVM book)
     {
         var books = await _client.BookAllAsync(book.Page);
@@ -31,5 +40,11 @@ public class BookService : BaseHttpService, IBookService
     public async Task<int> GetBookTotalPages()
     {
         return await _client.GetBookTotalPagesAsync();
+    }
+
+    public async Task<BookDetailsVM> GetBookWithDetails(Guid id)
+    {
+        var book = await _client.BookAsync(id);
+        return _mapper.Map<BookDetailsVM>(book);
     }
 }

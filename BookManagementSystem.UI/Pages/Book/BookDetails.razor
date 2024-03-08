@@ -1,0 +1,64 @@
+﻿@using BookManagementSystem.UI.Models
+@using BookManagementSystem.UI.UnitOfWork
+@using BookManagementSystem.UI.Services.Base;
+@using BookManagementSystem.UI.Components;
+@using BookManagementSystem.UI.Models.Book;
+
+@page "/bookdetails/{bookId:guid}"
+
+@inject IUnitOfWork unitOfWork
+@inject NavigationManager navigationManager
+
+<PageTitle>Book's details</PageTitle>
+<h3 class="page-title">Detailed view of Book</h3>
+
+@if (Book == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <div>
+        <div>
+            <div>
+                <DetailsFormCard Delete="Delete" Update="Edit" ID="@Book.ID" Name="@Book.Title" />
+            </div>
+            <hr />
+            <div>
+                <div>
+                    <p>Price</p>
+                    <p>@Book.Price</p>
+                </div>
+                <div>
+                    <p>
+                        ISBN
+                    </p>
+                    <p>
+                        @Book.ISBN
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Publication year
+                    </p>
+                    <p>
+                        @Book.PublicationYear
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Author name
+                    </p>
+                    <p>
+                        @Author.AuthorName
+                    </p>
+                </div>
+                <div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}
+
+

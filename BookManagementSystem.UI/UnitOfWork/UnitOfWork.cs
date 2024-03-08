@@ -31,4 +31,13 @@ public class UnitOfWork : IUnitOfWork
             return _Book ?? (_Book = new BookService(_client, _mapper));
         }
     }
+
+    protected IOrderService? _Order;
+    public IOrderService Order
+    {
+        get
+        {
+            return _Order ?? (_Order=new OrderService(_client, _mapper));
+        }
+    }
 }

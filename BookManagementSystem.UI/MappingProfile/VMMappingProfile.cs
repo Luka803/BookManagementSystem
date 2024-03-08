@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BookManagementSystem.UI.Models.Author;
 using BookManagementSystem.UI.Models.Book;
+using BookManagementSystem.UI.Models.Order;
 using BookManagementSystem.UI.Services.Base;
 
 namespace BookManagementSystem.UI.MappingProfile;
@@ -25,7 +26,11 @@ public class VMMappingProfile : Profile
 
         CreateMap<BookPagedListDTO, BookPagedListVM>().ReverseMap();
         CreateMap<BookAddVM, AddBookCommand>().ReverseMap();
+        CreateMap<BookDetailsVM, BookWithDetailsDTO>().ReverseMap();
 
+        #endregion
+        #region Order
+        CreateMap<OrderAddVM, AddOrderCommand>().ReverseMap();
         #endregion
 
     }

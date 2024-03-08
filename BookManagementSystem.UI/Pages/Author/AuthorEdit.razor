@@ -13,22 +13,22 @@
 }
 else
 {
-    <EditForm Model="@Author" OnValidSubmit="HandleSubmit" class="edit-form">
+    <EditForm Model="@Author" OnValidSubmit="HandleSubmit">
         <DataAnnotationsValidator />
         <ValidationSummary />
-        <div class="edit-form-group">
-            <label class="edit-form-label" for="name">Author name</label>
-            <InputText class="edit-form-input" id="name" @bind-Value="@Author.AuthorName" />
+        <div>
+            <label for="name">Author name</label>
+            <InputText id="name" @bind-Value="@Author.AuthorName" />
         </div>
-        <div class="edit-form-group">
-            <label class="edit-form-label" for="birthYear">Birth year</label>
-            <InputNumber class="edit-form-input" id="birthYear" @bind-Value="@Author.BirthYear" />
+        <div>
+            <label for="birthYear">Birth year</label>
+            <InputNumber id="birthYear" @bind-Value="@Author.BirthYear" />
         </div>
-        <div class="edit-form-group">
-            <label class="edit-form-label" for="biography">Biography</label>
-            <InputTextArea class="edit-form-input" id="biography" @bind-Value="@Author.Biography" />
+        <div>
+            <label for="biography">Biography</label>
+            <InputTextArea id="biography" @bind-Value="@Author.Biography" />
         </div>
-        <button class="btn-main" type="submit">Submit</button>
+        <button style="display: none" type="submit"></button>
     </EditForm>
 
 }

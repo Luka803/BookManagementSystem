@@ -1,0 +1,32 @@
+﻿@page "/orderadd"
+@using BookManagementSystem.UI.Models.Order
+@using BookManagementSystem.UI.UnitOfWork
+@using BookManagementSystem.UI.Components;
+
+@inject IUnitOfWork unitOfWork;
+@inject NavigationManager navigationManager;
+
+
+<EditForm Model="OrderItem" OnSubmit="AddOrderItem">
+
+    <div>
+        <InputNumber @bind-Value=OrderItem.Price />
+    </div>
+    <div>
+        <InputNumber @bind-Value=OrderItem.Count />
+    </div>
+    <div>
+        <InputSelect @bind-Value=OrderItem.BookID>
+            @foreach (var item in Books)
+            {
+                <option value="@item.ID">@item.Title</option>
+            }
+        </InputSelect>
+
+    </div>
+
+    <button style="display: none" type="submit"></button>
+
+</EditForm>
+
+<TableCollection Items=Items TItem=OrderItemAddVM Routes=Routes />

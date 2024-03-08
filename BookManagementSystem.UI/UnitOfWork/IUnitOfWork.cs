@@ -6,4 +6,5 @@ public interface IUnitOfWork
 {
     public IAuthorService Author { get; }
     public IBookService Book { get; }
+    public IOrderService Order { get; }
 }

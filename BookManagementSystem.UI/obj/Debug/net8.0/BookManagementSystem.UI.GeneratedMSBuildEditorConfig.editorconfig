@@ -30,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xCdXR0b24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/DetailsFormCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEZXRhaWxzRm9ybUNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/Pagination.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdpbmF0aW9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
@@ -40,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/Table.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/TableCollection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYWJsZUNvbGxlY3Rpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Components/TotalCount.razor]
@@ -66,12 +74,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rQWRkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Book/BookDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Book/BookEdit.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rRWRpdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Book/BookIndex.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQm9va1xCb29rSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/Pages/Order/OrderAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJcT3JkZXJBZGQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/lukak/OneDrive/Desktop/BookManagementSystem/BookManagementSystem.UI/_Imports.razor]

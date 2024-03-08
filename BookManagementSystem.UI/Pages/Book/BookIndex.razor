@@ -23,37 +23,35 @@ else
 {
 
     <div class="@NavMenuCssClass">
-        <EditForm Model="@Book" OnSubmit="() => RefreshData(Book.Page)" class="edit-form">
+        <EditForm Model="@Book" OnSubmit="() => RefreshData(Book.Page)">
             <DataAnnotationsValidator />
             <ValidationSummary />
-            <div class="edit-form-group">
-                <label for="title" class="edit-form-label">Title</label>
+            <div>
+                <label for="title">Title</label>
                 <InputText @bind-Value="@Book.Title" id="title" class="edit-form-input" />
             </div>
-            <div class="edit-form-group">
-                <label for="publicationYearStar" class="edit-form-label">Publication year from</label>
-                <InputNumber @bind-Value="@Book.PublicationYearStart" id="publicationYearStar" class="edit-form-input" />
+            <div>
+                <label for="publicationYearStar">Publication year from</label>
+                <InputNumber @bind-Value="@Book.PublicationYearStart" id="publicationYearStar" />
             </div>
-            <div class="edit-form-group">
+            <div>
                 <label for="publicationYearEnd" class="edit-form-label">Publication year to</label>
-                <InputNumber @bind-Value="@Book.PublicationYearEnd" id="publicationYearEnd" class="edit-form-input" />
+                <InputNumber @bind-Value="@Book.PublicationYearEnd" id="publicationYearEnd" />
             </div>
-            <div class="edit-form-group">
+            <div>
                 <label for="authorName" class="edit-form-label">Author name</label>
-                <InputText @bind-Value="@Book.AuthorName" id="authorName" class="edit-form-input" />
+                <InputText @bind-Value="@Book.AuthorName" id="authorName" />
             </div>
-            <div class="edit-form-group">
+            <div>
                 <label for="priceStart" class="edit-form-label">Price from</label>
-                <InputNumber @bind-Value="@Book.PriceStart" id="priceStart" class="edit-form-input" />
+                <InputNumber @bind-Value="@Book.PriceStart" id="priceStart" />
             </div>
-            <div class="edit-form-group">
-                <label for="priceEnd" class="edit-form-label">Price to</label>
-                <InputNumber @bind-Value="@Book.PriceEnd" id="priceEnd" class="edit-form-input" />
+            <div>
+                <label for="priceEnd">Price to</label>
+                <InputNumber @bind-Value="@Book.PriceEnd" id="priceEnd" />
             </div>
         </EditForm>
     </div>
-
-
 
     <Button OnClick="()=>RefreshData(1)" Text="Refresh data" CssRule="btn-max" />
     <Button OnClick="@AddBook" Text="New book" CssRule="btn-main" />

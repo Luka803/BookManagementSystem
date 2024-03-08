@@ -19,7 +19,10 @@ public class AddBookCommandValidator : AbstractValidator<AddBookCommand>
 
         RuleFor(x => x.ISBN)
             .NotEmpty()
-            .WithMessage("{PropertyName} is required");
+            .WithMessage("{PropertyName} is required")
+            .GreaterThanOrEqualTo(13)
+            .LessThanOrEqualTo(13);
+
         RuleFor(x => x)
             .MustAsync(AuthorExist)
             .WithMessage("Author with this ID does not exist");

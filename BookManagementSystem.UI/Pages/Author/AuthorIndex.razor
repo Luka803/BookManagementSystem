@@ -21,20 +21,20 @@ else
     <SearchBar Event="ToggleNavMenu" />
 
     <div class="@NavMenuCssClass">
-        <EditForm Model="@Author" OnSubmit="() => RefreshData(Author.Page)" class="edit-form">
+        <EditForm Model="@Author" OnSubmit="() => RefreshData(Author.Page)">
             <DataAnnotationsValidator />
             <ValidationSummary />
-            <div class="edit-form-group">
-                <label class="edit-form-label" for="name">Author name</label>
-                <InputText class="edit-form-input" id="name" @bind-Value="@Author.AuthorName" />
+            <div>
+                <label for="name">Author name</label>
+                <InputText id="name" @bind-Value="@Author.AuthorName" />
             </div>
-            <div class="edit-form-group">
-                <label class="edit-form-label" for="birthYear">Start birth year</label>
-                <InputNumber class="edit-form-input" id="birthYear" @bind-Value="@Author.StartBirthYear" />
+            <div>
+                <label for="birthYear">Start birth year</label>
+                <InputNumber id="birthYear" @bind-Value="@Author.StartBirthYear" />
             </div>
-            <div class="edit-form-group">
-                <label class="edit-form-label" for="biography">End birth year</label>
-                <InputNumber class="edit-form-input" id="biography" @bind-Value="@Author.EndBirthYear" />
+            <div>
+                <label for="biography">End birth year</label>
+                <InputNumber id="biography" @bind-Value="@Author.EndBirthYear" />
             </div>
             <button style="display: none" type="submit"></button>
         </EditForm>
